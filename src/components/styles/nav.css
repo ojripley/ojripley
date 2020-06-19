@@ -1,0 +1,63 @@
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5vw;
+  position: relative;
+  right: 0;
+  float: right;
+  margin-left: auto;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #0B6278;
+}
+.nav-container .nav-link {
+  position: relative;
+  display: flex;
+  align-self: center;
+  width: 6em;
+  height: 5em;
+  padding: 0em;
+  color: #DEE9F4;
+}
+.nav-container .nav-link .link-text {
+  position: relative;
+  align-self: center;
+  padding: 0px;
+  width: 50%;
+  margin: 0 auto;
+  transition: 0.2s ease;
+}
+.nav-container .nav-link .highlight {
+  position: relative;
+  display: flex;
+  align-self: center;
+  width: 0px;
+  transition: 0.2s ease;
+  height: inherit;
+}
+.nav-container .nav-link .highlight .url-prefix {
+  opacity: 0;
+  transition: 0.1s ease;
+  align-self: center;
+  padding: 0px;
+  margin: 0px;
+}
+.nav-container .nav-link:hover {
+  cursor: pointer;
+}
+.nav-container .nav-link:hover .link-text {
+  font-size: 13pt;
+}
+.nav-container .nav-link:hover .highlight {
+  width: 0.4em;
+  background-color: #002539;
+  padding-left: 0px;
+  margin-left: -0.4em;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+.nav-container .nav-link:hover .highlight .url-prefix {
+  opacity: 1;
+}
+
+/*# sourceMappingURL=nav.css.map */

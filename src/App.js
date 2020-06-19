@@ -1,26 +1,35 @@
+// react imports
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+
+// custom component imports
+import Home from "./components/Home";
+import InclementPi from "./components/InclementPi";
+import DuckDuckDebug from "./components/DuckDuckDebug";
+
+// styles import
+import "./components/styles/app.css";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <main>
+        <nav>
+          {/* <ul>
+            <li><Link to="/">ojripley/</Link></li>
+            <li><Link to="/inclementpi">ojripley/inclementpi</Link></li>
+            <li><Link to="/duckduckdebug">ojripley/duckduckdebug</Link></li>
+          </ul> */}
+        </nav>
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/inclementPi" component={InclementPi} />
+          <Route path="/duckduckdebug" component={DuckDuckDebug} />
+        </Switch>
+      </main>
+    </Router>
   );
 }
+
 
 export default App;
