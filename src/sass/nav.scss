@@ -9,7 +9,19 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #0B6278;
+  box-shadow: 2px 2px 5px 2px #222222;
   
+  .scroll-to-top {
+    position: relative;
+    display: flex;
+    align-self: center;
+    width: 6em;
+    height: 5em;
+    padding: 0em;
+    color: #DEE9F4;
+    z-index: -2;
+  }
+
   .nav-link {
     position: relative;
     display: flex;
@@ -38,7 +50,7 @@
       width: 0px;
       transition: 0.2s ease;
       // z-index: 1;
-      height: inherit;
+      height: 90%;
 
       .url-prefix {
         // display: none;
@@ -67,8 +79,8 @@
       padding-left: 0px;
       // margin-left: -5px;
       margin-left: -0.4em;
-      border-top-left-radius: 2px;
-      border-bottom-left-radius: 2px;
+      border-top-left-radius: 7px;
+      border-bottom-left-radius: 7px;
 
 
       .url-prefix {

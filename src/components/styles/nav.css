@@ -9,6 +9,17 @@
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   background-color: #0B6278;
+  box-shadow: 2px 2px 5px 2px #222222;
+}
+.nav-container .scroll-to-top {
+  position: relative;
+  display: flex;
+  align-self: center;
+  width: 6em;
+  height: 5em;
+  padding: 0em;
+  color: #DEE9F4;
+  z-index: -2;
 }
 .nav-container .nav-link {
   position: relative;
@@ -33,7 +44,7 @@
   align-self: center;
   width: 0px;
   transition: 0.2s ease;
-  height: inherit;
+  height: 90%;
 }
 .nav-container .nav-link .highlight .url-prefix {
   opacity: 0;
@@ -53,8 +64,8 @@
   background-color: #002539;
   padding-left: 0px;
   margin-left: -0.4em;
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 .nav-container .nav-link:hover .highlight .url-prefix {
   opacity: 1;

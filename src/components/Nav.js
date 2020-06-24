@@ -8,7 +8,7 @@ import NavLink from "./NavLink";
 export default function Nav(props) {
   const { scrollY } = useViewportScroll();
   // const [navTopOffset, setNavTopOffset] = useState(Math.max(document.documentElement.clientHeight, window.innerHeight || 0) - scrollY.current);
-  const [navTopOffset, setNavTopOffset] = useState('15em');
+  const [navTopOffset, setNavTopOffset] = useState('200em');
   const [positionType, setPositionType] = useState('absolute');
   const [borderRadius, setBorderRadius] = useState('0px');
 
@@ -28,7 +28,7 @@ export default function Nav(props) {
       setPositionType('fixed');
       setBorderRadius('5px');
     } else {
-      setNavTopOffset('15em');
+      setNavTopOffset('20em');
       setPositionType('relative');
       setBorderRadius('0px');
     }
@@ -45,6 +45,8 @@ export default function Nav(props) {
       <NavLink text={'profile'}>
       </NavLink>
       <NavLink text={'projects'}>
+      </NavLink>
+      <NavLink text={'contact'}>
       </NavLink>
     </motion.div>
   );

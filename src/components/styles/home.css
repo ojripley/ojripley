@@ -40,6 +40,7 @@
   text-shadow: 2px 4px 8px rgba(0, 0, 0, 0.8);
 }
 .home .title-section .scroll-button {
+  display: flex;
   align-self: flex-end;
   justify-self: flex-end;
   margin-right: 5vw;
@@ -49,16 +50,28 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   color: #DEE9F4;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 2px 2px 5px 2px #222222;
 }
-.home .profile-section {
+.home .title-section .scroll-button .scroll-down-arrow {
+  position: relative;
+  scale: 200%;
+  animation: MoveUpDown 1.2s linear infinite;
+}
+@keyframes MoveUpDown {
+  0%, 100% {
+    top: -0.5em;
+  }
+  50% {
+    top: 0.5em;
+  }
+}
+.home .section {
   width: 100vw;
   height: 100vh;
   background-color: white;
-}
-.home .projects-section {
-  width: 100vw;
-  height: 100vh;
-  background-color: white;
+  z-index: -3;
 }
 
 /*# sourceMappingURL=home.css.map */
