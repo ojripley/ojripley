@@ -1,0 +1,18 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bio .headshot-img {
+  width: 150px;
+  border-radius: 10px;
+}
+.bio .media-links {
+  display: flex;
+}
+.bio .media-links .media-icon {
+  margin: 5px;
+}
+
+/*# sourceMappingURL=bio.css.map */

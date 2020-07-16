@@ -1,91 +1,134 @@
-.nav-container {
+.nav-wrapper {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  -ms-transform: translate(50%, -50%);
+  transform: translate(50%, -50%);
   display: flex;
-  flex-direction: column;
-  margin-right: 5vw;
-  position: relative;
-  right: 0;
-  float: right;
-  margin-left: auto;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  background-color: #0B6278;
-  box-shadow: 2px 2px 5px 2px #222222;
-  
-  .scroll-to-top {
-    position: relative;
+  flex-direction: row;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px #aaaaaa;
+  transition: 0.25s;
+
+  .nav-appendage {
+    width: 900px;
+    height: inherit;
     display: flex;
-    align-self: center;
-    width: 6em;
-    height: 5em;
-    padding: 0em;
-    color: #DEE9F4;
-    z-index: -2;
+    justify-content: center;
+    align-items: center;
+    transition: 0.25s
   }
 
-  .nav-link {
-    position: relative;
+  .nav {
     display: flex;
-    align-self: center;
-    width: 6em;
-    height: 5em;
-    padding: 0em;
-    color: #DEE9F4;
-    // z-index: 10;
-
-    .link-text {
-      position: relative;
-      align-self: center;
-      padding: 0px;
-      width: 50%;
-      margin: 0 auto;
-      // z-index: 10;
-      transition: 0.2s ease;
-
-    }
-
-    .highlight {
+    flex-direction: column;
+    // margin-right: 5vw;
+    position: relative;
+    margin-left: auto;
+    background-color: #002539;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+    .scroll-to-top {
       position: relative;
       display: flex;
       align-self: center;
-      width: 0px;
-      transition: 0.2s ease;
-      // z-index: 1;
-      height: 90%;
-
-      .url-prefix {
-        // display: none;
-        opacity: 0;
-        transition: 0.1s ease;
-        // transition-delay: 0.1s;
+      width: 6em;
+      height: 5em;
+      padding: 0em;
+      color: #DEE9F4;
+      z-index: -2;
+    }
+  
+    .nav-link {
+      position: relative;
+      display: flex;
+      align-self: center;
+      width: 6em;
+      height: 7em;
+      padding: 0em;
+      color: #DEE9F4;
+      text-decoration: none;
+      outline: none;
+      font-weight: bold;
+  
+      .link-text {
+        position: relative;
         align-self: center;
         padding: 0px;
-        margin: 0px;
-        // width: 50%;
-        // margin: 0 auto;
+        width: 50%;
+        margin: 0 auto;
+        transition: 0.2s ease;
       }
+  
+      .highlight {
+        position: relative;
+        display: flex;
+        align-self: center;
+        width: 0.4em;
+        transition: 0.1s ease;
+        // z-index: -1;
+        left: 0.4em;
+        height: 100%;
+  
+        .url-prefix {
+          // display: none;
+          opacity: 0;
+          transition: 0.1s ease;
+          // transition-delay: 0.1s;
+          align-self: center;
+          padding: 0px;
+          margin: 0px;
+          // width: 50%;
+          // margin: 0 auto;
+        }
+      }
+    }
+  
+    .nav-link:hover {
+      cursor: pointer;
+  
+      .link-text {
+        font-size: 13pt;
+      }
+  
+      .highlight {
+        width: 0.4em;
+        background-color: #002539;
+        padding-left: 0px;
+        // margin-left: -5px;
+        // margin-left: 1em;
+        border-top-right-radius: 7px;
+        border-bottom-right-radius: 7px;
+        box-shadow: 2px 2px 2px #aaaaaa;
+        left: 0.4em;
+  
+  
+        .url-prefix {
+          opacity: 1;
+        }
+      }
+    }
+
+    .current-page {
+      background-color: white;
+      color: #002539;
+    }
+  
+    .selected-section {
+      background-color: #002539;
     }
   }
+}
 
-  .nav-link:hover {
-    cursor: pointer;
+.sideline {
+  right: 0%;
+  margin-right: 200px;
+  position: fixed;
 
-    .link-text {
-      font-size: 13pt;
-    }
-
-    .highlight {
-      width: 0.4em;
-      background-color: #002539;
-      padding-left: 0px;
-      // margin-left: -5px;
-      margin-left: -0.4em;
-      border-top-left-radius: 7px;
-      border-bottom-left-radius: 7px;
-
-
-      .url-prefix {
-        opacity: 1;
-      }
-    }
+  .nav-appendage {
+    width: 200px;
   }
 }

@@ -1,0 +1,21 @@
+.page {
+  width: 50%;
+  height: 3000px;
+  background-color: white;
+  box-shadow: 2px 2px 5px 2px #aaaaaa;
+  border-radius: 10px;
+  position: absolute;
+  right: 55%;
+  top: 5%;
+  -ms-transform: translate(50%);
+  transform: translate(50%);
+  transition: ease 0.4s;
+}
+
+.page-offscreen {
+  top: 200%;
+}
+
+.page-hidden {
+  display: none;
+}

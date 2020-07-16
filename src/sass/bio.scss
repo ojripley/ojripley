@@ -1,0 +1,19 @@
+.bio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .headshot-img {
+    width: 150px;
+    border-radius: 10px;
+  }
+
+  .media-links {
+    display: flex;
+
+    .media-icon {
+      margin: 5px;
+    }
+  }
+}

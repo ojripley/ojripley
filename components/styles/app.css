@@ -1,12 +1,9 @@
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 0px;
   margin: 0px;
   max-width: 100%;
-  min-height: 100vh;
   overflow-x: hidden;
+  background-color: #ddddff;
 }
 
 html {
@@ -14,12 +11,6 @@ html {
   padding: 0px;
   margin: 0px;
   max-width: 100%;
-}
-
-.app {
-  height: 100%;
-  width: 100%;
-  display: flex;
 }
 
 /*# sourceMappingURL=app.css.map */

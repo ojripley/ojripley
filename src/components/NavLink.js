@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavLink(props) {
 
@@ -11,13 +12,17 @@ export default function NavLink(props) {
     }
   };
 
+  const handlePageSelect = () => {
+    props.setCurrentPage(props.text);
+  };
+
   return (
-    <div className={'nav-link'} onClick={handleScrollToElement}>
-      <div className={'highlight'}>
-      </div>
+    <Link to={props.address} className={props.currentPage.toLowerCase() === props.text ? 'nav-link current-page' : 'nav-link'} onClick={() => handlePageSelect()}>
       <p className={'link-text'}>
         {props.text}
       </p>
-    </div>
+      <div className={'highlight'}>
+      </div>
+    </Link>
   );
 };

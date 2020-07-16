@@ -1,4 +1,7 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, forwardRef} from 'react';
+
+import Section from './Section';
+
 import "./styles/home.css";
 import mast from '../images/austin-walker-78Dvwo_7xt4-unsplash.jpg';
 import { useViewportScroll } from "framer-motion";
@@ -12,38 +15,24 @@ library.add(faCheckSquare, faCoffee, faAngleDown);
 
 export default function Home(props) {
 
-  const [currentSection, setCurrentSection] = useState(null);
-
-  const scroll = function() {
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-    window.scrollTo(0, vh);
-  };
-
   return(
     <>
     <div className={'home'}>
-      <img className={'title-image'} src={mast} alt={'Sail mast and blue sky.'}></img>
+      {/* <img className={'title-image'} src={mast} alt={'Sail mast and blue sky.'}></img>
 
       <div className={'title-section'}>
         <h1>
           - Owen J. Ripley -
         </h1>
 
-        <Nav></Nav>
-        <div className={'scroll-button'} onClick={() => scroll()}>
+        {/* <Nav></Nav> */}
+        {/* <div className={'scroll-button'} onClick={() => scroll()}>
             <FontAwesomeIcon icon="angle-down" className={'scroll-down-arrow'}/>
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
 
-      <div className={'section'} id={'profile-section'}>
-        PROFILE GOES HERE
-      </div>
-      <div className={'section'} id={'projects-section'}>
-        projects go here
-      </div>
-      <div className={'section'} id={'contact-section'}>
-      </div>
+      {/* <Section className={'section'} id={'about-section'} content={'PROFILE GOES HERE'} >
+      </Section> */}
     </div>
     </>
   )
