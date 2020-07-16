@@ -39,6 +39,7 @@ export default function About(props) {
     }, 100);
   });
 
+  const setDirectorContent = props.setDirectorContent;
   useEffect(() => {
     const tempDirectorContent = [];
     for (let content of pageContent) {
@@ -59,9 +60,8 @@ export default function About(props) {
 
     }
 
-    props.setDirectorContent(tempDirectorContent);
-
-  }, []);
+    setDirectorContent(tempDirectorContent);
+  }, [setDirectorContent]);
 
     let i = 0;
 

@@ -15,6 +15,18 @@ export default function Section(props) {
 
   console.log(entry.intersectionRatio);
 
+  if (entry.intersectionRatio > 0.3) {
+    const element = document.querySelector(`#${props.header.toLowerCase()}-director-label`);
+    if (element) {
+      element.classList.add('focused')
+    }
+  } else if (entry.intersectionRatio < 0.3) {
+    const element = document.querySelector(`#${props.header.toLowerCase()}-director-label`);
+    if (element) {
+      element.classList.remove('focused')
+    }
+  }
+
   let i = 0;
   const contentComponents = props.text.map((text) => {
 

@@ -1,5 +1,7 @@
 import React from 'react';
 
+import './styles/director.css';
+
 export default function Director(props) {
 
   let directorContentComponents = null;
@@ -13,11 +15,11 @@ export default function Director(props) {
 
       if (data.sectionHeader) {
         return (
-          <div key={i}>{data.sectionHeader}</div>
+          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`}>{data.sectionHeader}</div>
         )
       } else if (data.subheader) {
         return (
-          <div key={i}>{data.subheader}</div>
+          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`}>{data.subheader}</div>
         )
       }
   
@@ -26,8 +28,8 @@ export default function Director(props) {
   }
 
   return (
-    <>
+    <div className={'director'}>
       {directorContentComponents}
-    </>
+    </div>
   );
 };
