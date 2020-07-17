@@ -4,9 +4,20 @@ import './styles/director.css';
 
 export default function Director(props) {
 
-  let directorContentComponents = null;
+  const handleScrollToElement = function (identifier) {
 
-  console.log(props.directorContent);
+    console.log('looking for ' + identifier);
+
+    const element = document.querySelector(`#${identifier}-section`);
+
+    console.log(element);
+
+    if (element && element.getBoundingClientRect) {
+      window.scrollTo(0, element.getBoundingClientRect().top + window.scrollY - 20);
+    }
+  };
+
+  let directorContentComponents = null;
 
   if (props.directorContent) {
     let i = 0;
@@ -15,11 +26,11 @@ export default function Director(props) {
 
       if (data.sectionHeader) {
         return (
-          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`} className={'director-label label-header'}>{data.sectionHeader}</div>
+          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`} className={'director-label label-header'} onClick={() => handleScrollToElement(`${data.sectionHeader.toLowerCase()}`)}>{data.sectionHeader}</div>
         )
       } else if (data.subheader) {
         return (
-          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`} className={'director-label label-subheader'}>{data.subheader}</div>
+          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`} className={'director-label label-subheader'} onClick={() => handleScrollToElement(`${data.subheader.toLowerCase()}`)}>{data.subheader}</div>
         )
       }
   

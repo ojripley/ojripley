@@ -3,15 +3,6 @@ import { Link } from 'react-router-dom';
 
 export default function NavLink(props) {
 
-  const handleScrollToElement = function() {
-
-    const element = document.querySelector(`#${props.text}-section`);
-
-    if (element && element.getBoundingClientRect) {
-      window.scrollTo(0, element.getBoundingClientRect().top + window.scrollY);
-    }
-  };
-
   const handlePageSelect = () => {
     props.setCurrentPage(props.text);
   };

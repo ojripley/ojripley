@@ -10,22 +10,42 @@
   -ms-transform: translate(50%);
   transform: translate(50%);
   transition: ease 0.4s;
-  padding: 1em;
+  // padding: 1em;
+
+  .title-container {
+    width: 100%;
+    background-color: red;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+  }
 
   .page-title {
-    font-size: 24pt;
+    font-size: 18pt;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 0px;
+    padding-top: 1em;
+    padding-bottom: 1em;
   }
 
   .section-header {
-    font-size: 20pt;
+    font-size: 22pt;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
   }
 
   .sub-section-header {
-    font-size: 18pt;
+    font-size: 20pt;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-weight: bold;
   }
 
   .paragraph {
-    font-size: 14pt;
+    font-size: 16pt;
+    margin-left: 40px;
+    margin-right: 40px;
   }
 }
 

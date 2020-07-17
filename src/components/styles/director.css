@@ -8,12 +8,16 @@
 }
 .director .director-label {
   font-size: 13pt;
-  padding: 0.2em;
+  padding: 0.3em;
   width: fit-content;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .director .director-label:hover {
   cursor: pointer;
   border: solid black;
+  box-shadow: 2px 2px 5px 2px #aaaaaa;
+  border-radius: 3px;
 }
 .director .label-header {
   margin-left: 1em;

@@ -21,6 +21,28 @@ const pageContent = [
     text: [
       {
         subheader: 'Running',
+        paragraph: 'I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! '
+      },
+      {
+        subHeader: 'Guitar',
+        paragraph: 'Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away '
+      },
+      {
+        subheader: 'Swimming',
+        paragraph: 'elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke '
+      },
+      {
+        subheader: 'Hiking',
+        paragraph: 'Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! Machu Picchu! Peru! '
+      }
+    ]
+  },
+  {
+    type: 'section',
+    sectionHeader: 'test',
+    text: [
+      {
+        subheader: 'testing',
         paragraph: 'I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! '
       }
     ]
@@ -83,7 +105,9 @@ export default function About(props) {
 
   return (
     <div className={classNames}>
-      <p className={'page-title'}>ojripley.com/about</p>
+      <div className={'title-container'}>
+        <p className={'page-title'}>ojripley.com/about</p>
+      </div>
       {contentComponents}
     </div>
   );
