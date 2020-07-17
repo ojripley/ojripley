@@ -50,6 +50,7 @@
   text-decoration: none;
   outline: none;
   font-weight: bold;
+  font-size: 14pt;
 }
 .nav-wrapper .nav .nav-link .link-text {
   position: relative;
@@ -79,7 +80,7 @@
   cursor: pointer;
 }
 .nav-wrapper .nav .nav-link:hover .link-text {
-  font-size: 13pt;
+  font-size: 15pt;
 }
 .nav-wrapper .nav .nav-link:hover .highlight {
   width: 0.4em;

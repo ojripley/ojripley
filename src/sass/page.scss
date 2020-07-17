@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 .page {
   width: 50%;
   height: 3000px;
@@ -13,10 +15,19 @@
   // padding: 1em;
 
   .title-container {
+    position: relative;
     width: 100%;
-    background-color: red;
+    background-color: $midnight-blue;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
+    margin-bottom: -6em;
+    z-index: 2;
+  }
+
+  hr {
+    z-index: 1;
+    position: relative;
+    width: 90%;
   }
 
   .page-title {
@@ -26,26 +37,41 @@
     margin-top: 0px;
     padding-top: 1em;
     padding-bottom: 1em;
+    color: white;
+    letter-spacing: 0.06em;
+
+    .title-emphasis {
+      font-size: 16pt;
+      font-weight: bold;
+      border: solid thin #dddddd;
+      padding: 2px;
+      margin-left: 2px;
+      border-radius: 5px;
+    }
   }
 
   .section-header {
+    margin-top: 5em;
     font-size: 22pt;
-    margin-left: 40px;
+    margin-left: 30px;
     margin-right: 40px;
     font-weight: bold;
+    border-bottom: solid black;
+    width: fit-content;
   }
 
   .sub-section-header {
     font-size: 20pt;
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 60px;
     font-weight: bold;
+    margin-top: 0em;
   }
 
   .paragraph {
-    font-size: 16pt;
-    margin-left: 40px;
-    margin-right: 40px;
+    font-size: 15pt;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 2em;
   }
 }
 

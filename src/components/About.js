@@ -106,7 +106,7 @@ export default function About(props) {
   return (
     <div className={classNames}>
       <div className={'title-container'}>
-        <p className={'page-title'}>ojripley.com/about</p>
+        <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>about</span></p>
       </div>
       {contentComponents}
     </div>

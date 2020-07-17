@@ -26,11 +26,11 @@ export default function Director(props) {
 
       if (data.sectionHeader) {
         return (
-          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`} className={'director-label label-header'} onClick={() => handleScrollToElement(`${data.sectionHeader.toLowerCase()}`)}>{data.sectionHeader}</div>
+          <div key={i} id={`${data.sectionHeader.toLowerCase().replace(/\s+/g, '')}-director-label`} className={'director-label label-header'} onClick={() => handleScrollToElement(`${data.sectionHeader.toLowerCase().replace(/\s+/g, '')}`)}>{data.sectionHeader}</div>
         )
       } else if (data.subheader) {
         return (
-          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`} className={'director-label label-subheader'} onClick={() => handleScrollToElement(`${data.subheader.toLowerCase()}`)}>{data.subheader}</div>
+          <div key={i} id={`${data.subheader.toLowerCase().replace(/\s+/g, '')}-director-label`} className={'director-label label-subheader'} onClick={() => handleScrollToElement(`${data.subheader.toLowerCase().replace(/\s+/g, '')}`)}>{data.subheader}</div>
         )
       }
   

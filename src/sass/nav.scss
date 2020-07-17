@@ -1,3 +1,5 @@
+@import './variables';
+
 .nav-wrapper {
   position: absolute;
   top: 50%;
@@ -25,7 +27,7 @@
     // margin-right: 5vw;
     position: relative;
     margin-left: auto;
-    background-color: #002539;
+    background-color: $midnight-blue;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 10px;
@@ -53,6 +55,7 @@
       text-decoration: none;
       outline: none;
       font-weight: bold;
+      font-size: 14pt;
   
       .link-text {
         position: relative;
@@ -61,6 +64,7 @@
         width: 50%;
         margin: 0 auto;
         transition: 0.2s ease;
+        // margin-left: 10px;
       }
   
       .highlight {
@@ -91,12 +95,12 @@
       cursor: pointer;
   
       .link-text {
-        font-size: 13pt;
+        font-size: 15pt;
       }
   
       .highlight {
         width: 0.4em;
-        background-color: #002539;
+        background-color: $midnight-blue;
         padding-left: 0px;
         // margin-left: -5px;
         // margin-left: 1em;
@@ -118,7 +122,7 @@
     }
   
     .selected-section {
-      background-color: #002539;
+      background-color: $midnight-blue;
     }
   }
 }

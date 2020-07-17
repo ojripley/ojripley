@@ -12,10 +12,18 @@
   transition: ease 0.4s;
 }
 .page .title-container {
+  position: relative;
   width: 100%;
-  background-color: red;
+  background-color: #002539;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
+  margin-bottom: -6em;
+  z-index: 2;
+}
+.page hr {
+  z-index: 1;
+  position: relative;
+  width: 90%;
 }
 .page .page-title {
   font-size: 18pt;
@@ -24,23 +32,37 @@
   margin-top: 0px;
   padding-top: 1em;
   padding-bottom: 1em;
+  color: white;
+  letter-spacing: 0.06em;
+}
+.page .page-title .title-emphasis {
+  font-size: 16pt;
+  font-weight: bold;
+  border: solid thin #dddddd;
+  padding: 2px;
+  margin-left: 2px;
+  border-radius: 5px;
 }
 .page .section-header {
+  margin-top: 5em;
   font-size: 22pt;
-  margin-left: 40px;
+  margin-left: 30px;
   margin-right: 40px;
   font-weight: bold;
+  border-bottom: solid black;
+  width: fit-content;
 }
 .page .sub-section-header {
   font-size: 20pt;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 60px;
   font-weight: bold;
+  margin-top: 0em;
 }
 .page .paragraph {
-  font-size: 16pt;
-  margin-left: 40px;
-  margin-right: 40px;
+  font-size: 15pt;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 2em;
 }
 
 .page-offscreen {

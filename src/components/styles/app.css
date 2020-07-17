@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap");
 body {
   display: flex;
   justify-content: center;
@@ -7,6 +8,7 @@ body {
   max-width: 100%;
   min-height: 100vh;
   overflow-x: hidden;
+  font-family: "Quicksand";
 }
 
 html {
