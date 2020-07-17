@@ -2,8 +2,6 @@ import React from 'react';
 
 import useIntersect from '../hooks/useIntersect';
 
-import './styles/section.css';
-
 const Component = React.forwardRef((props, ref) => {
   return (<div {...props} ref={ref} />);
 });
@@ -30,14 +28,11 @@ export default function SubSection(props) {
   }
 
   return (
-    <Component className={'sub-section'} id={'profile-section'} ref={ref}
-      style={{
-        backgroundColor: entry.intersectionRatio > 0.5 ? 'red' : 'blue'
-      }}>
-      <p className={'.sub-section-header'}>
+    <Component className={'sub-section'} id={'profile-section'} ref={ref}>
+      <p className={'sub-section-header'}>
         {props.text.subheader}
       </p>
-      <p className={'sub-section-paragraph'}>
+      <p className={'paragraph'}>
         {props.text.paragraph}
       </p>
     </Component>

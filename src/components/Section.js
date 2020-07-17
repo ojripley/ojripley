@@ -54,7 +54,7 @@ export default function Section(props) {
       return (
         <div
           key={i}>
-          <p className={'section-paragraph'}>
+          <p className={'paragraph'}>
             {text.paragraph}
           </p>
 
@@ -66,11 +66,8 @@ export default function Section(props) {
   });
 
   return(
-    <Component className={'section'} id={'profile-section'} ref={ref}
-    style={{
-      backgroundColor: entry.intersectionRatio > 0.5 ? 'red' : 'blue'
-    }}>
-      <p className={'.section-header'}>
+    <Component className={'section'} ref={ref}>
+      <p className={'section-header'}>
         {props.header}
       </p>
       {contentComponents}

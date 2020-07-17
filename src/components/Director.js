@@ -15,11 +15,11 @@ export default function Director(props) {
 
       if (data.sectionHeader) {
         return (
-          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`}>{data.sectionHeader}</div>
+          <div key={i} id={`${data.sectionHeader.toLowerCase()}-director-label`} className={'director-label label-header'}>{data.sectionHeader}</div>
         )
       } else if (data.subheader) {
         return (
-          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`}>{data.subheader}</div>
+          <div key={i} id={`${data.subheader.toLowerCase()}-director-label`} className={'director-label label-subheader'}>{data.subheader}</div>
         )
       }
   

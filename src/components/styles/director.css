@@ -1,5 +1,29 @@
+.director {
+  color: #888888;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  height: inherit;
+  width: inherit;
+}
+.director .director-label {
+  font-size: 13pt;
+  padding: 0.2em;
+  width: fit-content;
+}
+.director .director-label:hover {
+  cursor: pointer;
+  border: solid black;
+}
+.director .label-header {
+  margin-left: 1em;
+}
+.director .label-subheader {
+  margin-left: 2em;
+}
 .director .focused {
   font-weight: bold;
+  color: #111111;
 }
 
 /*# sourceMappingURL=director.css.map */

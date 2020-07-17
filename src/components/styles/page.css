@@ -13,7 +13,16 @@
   padding: 1em;
 }
 .page .page-title {
+  font-size: 24pt;
+}
+.page .section-header {
   font-size: 20pt;
+}
+.page .sub-section-header {
+  font-size: 18pt;
+}
+.page .paragraph {
+  font-size: 14pt;
 }
 
 .page-offscreen {
