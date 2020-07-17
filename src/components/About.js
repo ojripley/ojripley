@@ -33,9 +33,7 @@ export default function About(props) {
   useEffect(() => {
     props.setCurrentPage('ABOUT');
     setTimeout(() => {
-      
       setClassNames('page');
-      // props.setDirectorContent([{sectionHeader: 'header1'}, {sectionHeader: 'h2'}]);
     }, 100);
   });
 
@@ -70,18 +68,6 @@ export default function About(props) {
       i++;
 
       if (content.type === 'section') {
-        // add header to director content
-        // if (content.sectionHeader) {
-        //   tempDirectorContent.push({sectionHeader: content.sectionHeader});
-        // }
-
-        // if (content.text) {
-        //   for (let text of content.text) {
-        //     if (text.subheader) {
-        //       tempDirectorContent.push({subheader: text.subheader});
-        //     }
-        //   }
-        // }
         return (
           <Section 
             key={i}
@@ -95,19 +81,9 @@ export default function About(props) {
       return null;
     });
 
-    // set director state
-    // console.log(tempDirectorContent);
-    // useEffect(() => {
-
-    //   console.log('running once');
-    //   if (tempDirectorContent) {
-    //     console.log(tempDirectorContent)
-    //     // props.setDirectorContent([tempDirectorContent]);
-    //   }
-    // }, [tempDirectorContent]);
-
   return (
     <div className={classNames}>
+      <p className={'page-title'}>ojripley.com/about</p>
       {contentComponents}
     </div>
   );

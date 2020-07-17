@@ -1,8 +1,8 @@
 import React from 'react';
 
-import useIntersect from '../hooks/useIntersect';
+import SubSection from './SubSection';
 
-import './styles/section.css';
+import useIntersect from '../hooks/useIntersect';
 
 const Component = React.forwardRef((props, ref) => {
   return (<div {...props} ref={ref} />);
@@ -18,12 +18,12 @@ export default function Section(props) {
   if (entry.intersectionRatio > 0.3) {
     const element = document.querySelector(`#${props.header.toLowerCase()}-director-label`);
     if (element) {
-      element.classList.add('focused')
+      element.classList.add('focused');
     }
   } else if (entry.intersectionRatio < 0.3) {
     const element = document.querySelector(`#${props.header.toLowerCase()}-director-label`);
     if (element) {
-      element.classList.remove('focused')
+      element.classList.remove('focused');
     }
   }
 
@@ -34,17 +34,21 @@ export default function Section(props) {
 
     if (text.subheader) {
       return (
-        <div
-          key={i}>
-          <p className={'section-subheader'}>
-            {text.subheader}
-          </p>
+        // <div
+        //   key={i}>
+        //   <p className={'section-subheader'}>
+        //     {text.subheader}
+        //   </p>
 
-          <p className={'section-paragraph'}>
-            {text.paragraph}
-          </p>
+        //   <p className={'section-paragraph'}>
+        //     {text.paragraph}
+        //   </p>
 
-        </div>
+        // </div>
+
+        <SubSection text={text}>
+
+        </SubSection>
       )
     } else {
       return (
