@@ -14,21 +14,22 @@
   transition: ease 0.4s;
   // padding: 1em;
 
+  hr {
+    z-index: 1;
+    position: relative;
+    width: 90%;
+  }
+
   .title-container {
     position: relative;
     width: 100%;
     background-color: $midnight-blue;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
-    margin-bottom: -6em;
+    margin-bottom: -5em;
     z-index: 2;
   }
 
-  hr {
-    z-index: 1;
-    position: relative;
-    width: 90%;
-  }
 
   .page-title {
     font-size: 18pt;
@@ -50,8 +51,16 @@
     }
   }
 
+  .page-description {
+    margin-top: 5.5em;
+    font-size: 15pt;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 2em;
+  }
+
   .section-header {
-    margin-top: 5em;
+    margin-top: 4em;
     font-size: 22pt;
     margin-left: 30px;
     margin-right: 40px;

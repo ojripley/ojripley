@@ -6,11 +6,7 @@ export default function Director(props) {
 
   const handleScrollToElement = function (identifier) {
 
-    console.log('looking for ' + identifier);
-
     const element = document.querySelector(`#${identifier}-section`);
-
-    console.log(element);
 
     if (element && element.getBoundingClientRect) {
       window.scrollTo(0, element.getBoundingClientRect().top + window.scrollY - 20);
@@ -26,11 +22,11 @@ export default function Director(props) {
 
       if (data.sectionHeader) {
         return (
-          <div key={i} id={`${data.sectionHeader.toLowerCase().replace(/\s+/g, '')}-director-label`} className={'director-label label-header'} onClick={() => handleScrollToElement(`${data.sectionHeader.toLowerCase().replace(/\s+/g, '')}`)}>{data.sectionHeader}</div>
+          <div key={i} id={`${data.sectionHeader.toLowerCase().replace(/\s|\.+/g, '')}-director-label`} className={'director-label label-header'} onClick={() => handleScrollToElement(`${data.sectionHeader.toLowerCase().replace(/\s+/g, '').replace(/\.+/g, '')}`)}>{data.sectionHeader}</div>
         )
       } else if (data.subheader) {
         return (
-          <div key={i} id={`${data.subheader.toLowerCase().replace(/\s+/g, '')}-director-label`} className={'director-label label-subheader'} onClick={() => handleScrollToElement(`${data.subheader.toLowerCase().replace(/\s+/g, '')}`)}>{data.subheader}</div>
+          <div key={i} id={`${data.subheader.toLowerCase().replace(/\s|\.+/g, '')}-director-label`} className={'director-label label-subheader'} onClick={() => handleScrollToElement(`${data.subheader.toLowerCase().replace(/\s+/g, '').replace(/\.+/g, '')}`)}>{data.subheader}</div>
         )
       }
   

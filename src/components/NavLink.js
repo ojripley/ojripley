@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 export default function NavLink(props) {
 
   const handlePageSelect = () => {
+    window.scrollTo(0, 0);
     props.setCurrentPage(props.text);
   };
 
