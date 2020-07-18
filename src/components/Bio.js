@@ -55,6 +55,9 @@ export default function Bio() {
       </div>
       <p className='bio-image-caption'>Yes, the moustache is fake. Game on, facial recognition bots.</p>
       <hr className='bio-divide'></hr>
+      <div className='bio-text-section'>
+        <p className='bio-text-1'>Software Developer</p>
+      </div>
     </div>
   );
 };

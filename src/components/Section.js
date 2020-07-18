@@ -33,9 +33,13 @@ export default function Section(props) {
     i++;
 
     if (text) {
+      console.log(text);
       return (
 
-        <SubSection text={text}>
+        <SubSection
+          text={text} 
+          key={i}
+        >
 
         </SubSection>
       )

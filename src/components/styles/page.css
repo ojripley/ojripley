@@ -1,6 +1,5 @@
 .page {
   width: 50%;
-  height: 3000px;
   background-color: white;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
   border-radius: 10px;
@@ -42,16 +41,28 @@
   padding: 2px;
   margin-left: 2px;
   border-radius: 5px;
+  color: #AEF6FF;
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.page .title-spacer {
+  height: 2em;
 }
 .page .page-description {
-  margin-top: 5.5em;
+  margin-top: 3em;
   font-size: 15pt;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
+}
+.page .page-secondary-description {
+  font-size: 14pt;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 1em;
 }
 .page .section-header {
-  margin-top: 4em;
+  margin-top: 2em;
   font-size: 22pt;
   margin-left: 30px;
   margin-right: 40px;
@@ -63,13 +74,14 @@
   font-size: 20pt;
   margin-left: 60px;
   font-weight: bold;
-  margin-top: 0em;
+  margin-top: 2em;
 }
 .page .paragraph {
   font-size: 15pt;
   margin-left: 60px;
   margin-right: 60px;
-  margin-bottom: 2em;
+  margin-bottom: 0em;
+  margin-top: 0.5em;
 }
 
 .page-offscreen {

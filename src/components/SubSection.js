@@ -25,14 +25,19 @@ export default function SubSection(props) {
     }
   }
 
-  const paragraphComponents = props.texts.paragraphs.map((paragraph) => {
+  let paragraphComponents = null;
 
-    return(
-      <div className={'paragraph'}>
-        {paragraph}
-      </div>
-    )
-  })
+  if (props.text && props.text.paragraphs) {
+
+    paragraphComponents = props.text.paragraphs.map((paragraph) => {
+  
+      return(
+        <div className={'paragraph'}>
+          {paragraph}
+        </div>
+      )
+    });
+  }
 
   return (
     <Component className={'sub-section'} ref={ref}>

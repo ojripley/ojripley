@@ -56,5 +56,10 @@
 .bio .bio-divide {
   width: 95%;
 }
+.bio .bio-text-section {
+  width: 100%;
+  display: flex;
+  margin-left: 40px;
+}
 
 /*# sourceMappingURL=bio.css.map */

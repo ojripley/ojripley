@@ -23,7 +23,7 @@
   flex-direction: column;
   position: relative;
   margin-left: auto;
-  background-color: #002539;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%), url("../../images/rocky_waters_vertical_slice.jpeg");
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding-top: 10px;
@@ -43,56 +43,30 @@
   position: relative;
   display: flex;
   align-self: center;
-  width: 6em;
+  width: 8em;
   height: 7em;
   padding: 0em;
-  color: #DEE9F4;
+  color: #002539;
   text-decoration: none;
   outline: none;
   font-weight: bold;
-  font-size: 14pt;
 }
 .nav-wrapper .nav .nav-link .link-text {
+  font-size: 16pt;
   position: relative;
   align-self: center;
-  padding: 0px;
-  width: 50%;
+  padding: 7px;
   margin: 0 auto;
   transition: 0.2s ease;
-}
-.nav-wrapper .nav .nav-link .highlight {
-  position: relative;
-  display: flex;
-  align-self: center;
-  width: 0.4em;
-  transition: 0.1s ease;
-  left: 0.4em;
-  height: 100%;
-}
-.nav-wrapper .nav .nav-link .highlight .url-prefix {
-  opacity: 0;
-  transition: 0.1s ease;
-  align-self: center;
-  padding: 0px;
-  margin: 0px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.9);
 }
 .nav-wrapper .nav .nav-link:hover {
   cursor: pointer;
 }
 .nav-wrapper .nav .nav-link:hover .link-text {
-  font-size: 15pt;
-}
-.nav-wrapper .nav .nav-link:hover .highlight {
-  width: 0.4em;
-  background-color: #002539;
-  padding-left: 0px;
-  border-top-right-radius: 7px;
-  border-bottom-right-radius: 7px;
-  box-shadow: 2px 2px 2px #aaaaaa;
-  left: 0.4em;
-}
-.nav-wrapper .nav .nav-link:hover .highlight .url-prefix {
-  opacity: 1;
+  font-size: 19pt;
+  border: solid #002539;
 }
 .nav-wrapper .nav .current-page {
   background-color: white;
@@ -104,7 +78,7 @@
 
 .sideline {
   right: 0%;
-  margin-right: 200px;
+  margin-right: 220px;
   position: fixed;
 }
 .sideline .nav-appendage {

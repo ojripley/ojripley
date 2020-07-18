@@ -24,10 +24,9 @@
   .nav {
     display: flex;
     flex-direction: column;
-    // margin-right: 5vw;
     position: relative;
     margin-left: auto;
-    background-color: $midnight-blue;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.0) 20%, rgba(0,0,0,0.0) 80%), url('../../images/rocky_waters_vertical_slice.jpeg');
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 10px;
@@ -48,46 +47,24 @@
       position: relative;
       display: flex;
       align-self: center;
-      width: 6em;
+      width: 8em;
       height: 7em;
       padding: 0em;
-      color: #DEE9F4;
+      color: $midnight-blue;
       text-decoration: none;
       outline: none;
       font-weight: bold;
-      font-size: 14pt;
-  
+      // text-shadow: 3px -1px white;
+      
       .link-text {
+        font-size: 16pt;
         position: relative;
         align-self: center;
-        padding: 0px;
-        width: 50%;
+        padding: 7px;
         margin: 0 auto;
         transition: 0.2s ease;
-        // margin-left: 10px;
-      }
-  
-      .highlight {
-        position: relative;
-        display: flex;
-        align-self: center;
-        width: 0.4em;
-        transition: 0.1s ease;
-        // z-index: -1;
-        left: 0.4em;
-        height: 100%;
-  
-        .url-prefix {
-          // display: none;
-          opacity: 0;
-          transition: 0.1s ease;
-          // transition-delay: 0.1s;
-          align-self: center;
-          padding: 0px;
-          margin: 0px;
-          // width: 50%;
-          // margin: 0 auto;
-        }
+        border-radius: 10px;
+        background-color: rgba($color:#ffffff, $alpha: 0.9);
       }
     }
   
@@ -95,24 +72,8 @@
       cursor: pointer;
   
       .link-text {
-        font-size: 15pt;
-      }
-  
-      .highlight {
-        width: 0.4em;
-        background-color: $midnight-blue;
-        padding-left: 0px;
-        // margin-left: -5px;
-        // margin-left: 1em;
-        border-top-right-radius: 7px;
-        border-bottom-right-radius: 7px;
-        box-shadow: 2px 2px 2px #aaaaaa;
-        left: 0.4em;
-  
-  
-        .url-prefix {
-          opacity: 1;
-        }
+        font-size: 19pt;
+        border: solid $midnight-blue;
       }
     }
 
@@ -129,7 +90,7 @@
 
 .sideline {
   right: 0%;
-  margin-right: 200px;
+  margin-right: 220px;
   position: fixed;
 
   .nav-appendage {

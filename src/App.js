@@ -69,6 +69,7 @@ function App() {
             <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} setPageClasses={setPageClasses}></Nav>
           </div>
       </Router>
+      <div className='dat-gap'></div>
     </main>
   );
 }
