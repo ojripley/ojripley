@@ -9,7 +9,7 @@ export default function NavLink(props) {
   };
 
   return (
-    <Link to={props.address} className={props.currentPage.toLowerCase() === props.text ? 'nav-link current-page' : 'nav-link'} onClick={() => handlePageSelect()}>
+    <Link to={props.address} className={props.currentPage.toLowerCase() === props.text ? 'nav-link current-page' : 'nav-link'} onClick={() => handlePageSelect()} id={props.id ? props.id : ''}>
       <p className={'link-text'}>
         {props.text}
       </p>

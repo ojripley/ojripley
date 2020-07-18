@@ -10,7 +10,7 @@
   flex-direction: row;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
-  transition: 0.25s;
+  transition: 0.3s;
 
   .nav-appendage {
     width: 1000px;
@@ -18,7 +18,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.25s
+    transition: 0.3s
   }
 
   .nav {
@@ -27,20 +27,28 @@
     position: relative;
     margin-left: auto;
     background: linear-gradient(to bottom, rgba(0,0,0,0.0) 20%, rgba(0,0,0,0.0) 80%), url('../../images/rocky_waters_vertical_slice.jpeg');
+    // background-color: $midnight-blue;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    // padding-top: 10px;
+    // padding-bottom: 10px;
     
-    .scroll-to-top {
-      position: relative;
+    .control-bar {
+      background-color: $midnight-blue;
+      border-top-right-radius: 10px;
       display: flex;
-      align-self: center;
-      width: 6em;
-      height: 5em;
-      padding: 0em;
-      color: #DEE9F4;
-      z-index: -2;
+      justify-content: center;
+
+      .dark-mode-toggle {
+        display: flex;
+        justify-content: space-around;
+        width: 50%;
+        // padding: 10px;
+        background-color: white;
+        border-radius: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
     }
   
     .nav-link {
@@ -65,12 +73,21 @@
         transition: 0.2s ease;
         border-radius: 10px;
         background-color: rgba($color:#ffffff, $alpha: 0.9);
+        // color: white;
       }
     }
-  
+    
+    #nav-link-top {
+      border-top-right-radius: 10px;
+    }
+
+    #nav-link-bottom {
+      border-bottom-right-radius: 10px;
+    }
+    
     .nav-link:hover {
       cursor: pointer;
-  
+      
       .link-text {
         font-size: 19pt;
         border: solid $midnight-blue;

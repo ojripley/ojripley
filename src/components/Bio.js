@@ -57,6 +57,8 @@ export default function Bio() {
       <hr className='bio-divide'></hr>
       <div className='bio-text-section'>
         <p className='bio-text-1'>Software Developer</p>
+        <p className='bio-text-1'>Software Developer</p>
+        <p className='bio-text-1'>Software Developer</p>
       </div>
     </div>
   );

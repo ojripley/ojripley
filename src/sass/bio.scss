@@ -74,6 +74,7 @@
   .bio-text-section {
     width: 100%;
     display: flex;
+    flex-direction: column;
     margin-left: 40px;
   }
 }
