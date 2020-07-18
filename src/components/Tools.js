@@ -3,19 +3,33 @@ import React, { useEffect, useState } from 'react';
 import Section from './Section';
 
 import './styles/page.css';
+import toolTablerIcons from '../images/tool_tabler_icons.png';
+import toolCoolors from '../images/tool_coolors.png';
+import toolFontAweseome from '../images/tool_font_awesome.png';
+import toolUnsplash from '../images/tool_unsplash.png';
 
 const pageContent = [
   {
     type: 'section',
-    sectionHeader: 'Icons',
+    sectionHeader: 'Icons and Images',
     text: [
       {
         subheader: 'Font Awesome',
-        paragraphs: ['"The web\'s most popular icon set."', 'A massive library of icons. You want it, they\'ve got it.']
+        paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
+        link: 'https://www.fontawesome.com',
+        img: toolFontAweseome
       },
       {
         subheader: 'Tabler Icons',
-        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.']
+        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
+        link: 'https://tablericons.com',
+        img: toolTablerIcons
+      },
+      {
+        subheader: 'Unsplash',
+        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
+        link: 'https://unsplash.com',
+        img: toolUnsplash
       }
     ]
   },
@@ -43,7 +57,9 @@ const pageContent = [
       },
       {
         subheader: 'Coolors.co',
-        paragraphs: ['hehehfhfe', 'eiofjiejfeifj']
+        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
+        link: 'https://coolors.co',
+        img: toolCoolors
       },
       {
         subheader: 'Favicon.io',

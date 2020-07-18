@@ -70,18 +70,55 @@
   border-bottom: solid black;
   width: fit-content;
 }
-.page .sub-section-header {
-  font-size: 20pt;
-  margin-left: 60px;
-  font-weight: bold;
-  margin-top: 2em;
-}
-.page .paragraph {
-  font-size: 15pt;
+.page .sub-section {
   margin-left: 60px;
   margin-right: 60px;
+  border-radius: 10px;
+  box-shadow: inset 2px 2px 10px #aaaaaa;
+  padding: 40px;
+  margin-bottom: 60px;
+}
+.page .sub-section .sub-section-header {
+  font-size: 20pt;
+  font-weight: bold;
+  display: flex;
+  align-self: flex-start;
+}
+.page .sub-section .image-title-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.page .sub-section .sub-section-image {
+  width: 300px;
+  border-radius: 10px;
+  margin-right: 20px;
+  border: solid #002539;
+}
+.page .sub-section .sub-header-link {
+  text-decoration: none;
+  outline: 0;
+  color: black;
+  border-bottom: solid white;
+  width: fit-content;
+}
+.page .sub-section .sub-header-link .icon {
+  align-self: center;
+  justify-self: center;
+  margin-left: 10px;
+  opacity: 0;
+  transition: 0.2s;
+}
+.page .sub-section .sub-header-link:hover {
+  border-bottom: solid black;
+}
+.page .sub-section .sub-header-link:hover .icon {
+  opacity: 100;
+}
+.page .sub-section .paragraph {
+  font-size: 15pt;
   margin-bottom: 0em;
-  margin-top: 0.5em;
 }
 
 .page-offscreen {

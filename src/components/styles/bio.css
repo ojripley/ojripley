@@ -38,6 +38,7 @@
   margin-top: 0px;
   margin-bottom: 0px;
   font-size: 13pt;
+  font-weight: bold;
 }
 .bio .bio-image-container .media-links .media-icon:hover {
   border-bottom: solid black;

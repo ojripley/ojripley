@@ -37,7 +37,7 @@ export default function Section(props) {
       return (
 
         <SubSection
-          text={text} 
+          text={text}
           key={i}
         >
 
