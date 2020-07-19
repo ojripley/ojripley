@@ -58,10 +58,11 @@
   width: 95%;
 }
 .bio .bio-text-section {
-  width: 100%;
   display: flex;
   flex-direction: column;
   margin-left: 40px;
+  border-radius: 10px;
+  margin-right: 40px;
 }
 
 /*# sourceMappingURL=bio.css.map */

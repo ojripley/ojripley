@@ -13,12 +13,12 @@ export default function SubSection(props) {
 
   if (props.text.subheader) {  
     if (entry.intersectionRatio > 0) {
-      const element = document.querySelector(`#${props.text.subheader.toLowerCase().replace(/\s|\.+/g, '')}-director-label`);
+      const element = document.querySelector(`#${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-director-label`);
       if (element) {
         element.classList.add('focused');
       }
     } else if (entry.intersectionRatio === 0) {
-      const element = document.querySelector(`#${props.text.subheader.toLowerCase().replace(/\s|\.+/g, '')}-director-label`);
+      const element = document.querySelector(`#${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-director-label`);
       if (element) {
         element.classList.remove('focused');
       }
@@ -29,10 +29,12 @@ export default function SubSection(props) {
 
   if (props.text && props.text.paragraphs) {
 
+    let i = 0;
     paragraphComponents = props.text.paragraphs.map((paragraph) => {
   
+      i++;
       return(
-        <div className={'paragraph'}>
+        <div className={'paragraph'} key={i}>
           {paragraph}
         </div>
       )
@@ -49,9 +51,9 @@ export default function SubSection(props) {
           </div>
          : null}
         {props.text.subheader ?       
-          <a className={`sub-section-header ${props.text.link ? 'sub-header-link' : ''}`} id={`${props.text.subheader.toLowerCase().replace(/\s|\.+/g, '')}-section`} href={props.text.link ? props.text.link : null} rel='noopener noreferrer' target='_blank'>
+          <a className={`sub-section-header ${props.text.link ? 'sub-header-link' : ''}`} id={`${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-section`} href={props.text.link ? props.text.link : null} rel='noopener noreferrer' target='_blank'>
             {props.text.subheader}
-            {props.text.link ? <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-right" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+            {props.text.link ? <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-arrow-right" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
               <line x1="5" y1="12" x2="19" y2="12" />
               <line x1="13" y1="18" x2="19" y2="12" />

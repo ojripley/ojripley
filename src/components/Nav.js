@@ -1,15 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import "./styles/nav.css";
 
-import { motion, useViewportScroll } from 'framer-motion';
-
 import NavLink from "./NavLink";
-
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-library.add(faCheckSquare, faCoffee, faAngleDown);
-
 
 export default function Nav(props) {
   return (

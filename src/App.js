@@ -1,9 +1,8 @@
 // react imports
 import React, {useState} from 'react';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route} from "react-router-dom";
 
 // custom component imports
-import Home from "./components/Home";
 import Director from './components/Director';
 import Bio from './components/Bio';
 import About from './components/About';
@@ -15,29 +14,16 @@ import Nav from "./components/Nav";
 // styles import
 import "./components/styles/app.css";
 
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCheckSquare, faCoffee, faAngleDown } from '@fortawesome/free-solid-svg-icons';
-library.add(faCheckSquare, faCoffee, faAngleDown);
-
 function App() {
   const profile = 'profile';
-  const about = 'ABOUT';
-  const projects = 'PROJECTS';
-  const tools = 'TOOLS';
-  const learn = 'LEARN';
+  // const about = 'ABOUT';
+  // const projects = 'PROJECTS';
+  // const tools = 'TOOLS';
+  // const learn = 'LEARN';
 
   const [currentPage, setCurrentPage] = useState(profile);
-  const [pageSections, setPageSections] = useState([]);
-  const [visibleSections, setVisibleSections] = useState([]);
   const [pageClasses, setPageClasses] = useState('page page-offscreen');
   const [directorContent, setDirectorContent] = useState([]);
-
-  const scroll = function () {
-    const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-
-    window.scrollTo(0, vh);
-  };
 
   return (
     <main className='app'>
@@ -45,7 +31,8 @@ function App() {
           <Route
             path="/"
             render={() => (
-              <Home setCurrentPage={setCurrentPage} setPageClasses={setPageClasses}></Home>
+              // <Home setCurrentPage={setCurrentPage} setPageClasses={setPageClasses}></Home>
+              <></>
             )}
           />
 

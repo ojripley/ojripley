@@ -15,12 +15,12 @@ export default function Section(props) {
 
   if (props.header) {
     if (entry.intersectionRatio > 0) {
-      const element = document.querySelector(`#${props.header.toLowerCase().replace(/\s|\.+/g, '')}-director-label`);
+      const element = document.querySelector(`#${props.header.toLowerCase().replace(/\s|\.|'+/g, '')}-director-label`);
       if (element) {
         element.classList.add('focused');
       }
     } else if (entry.intersectionRatio === 0) {
-      const element = document.querySelector(`#${props.header.toLowerCase().replace(/\s|\.+/g, '')}-director-label`);
+      const element = document.querySelector(`#${props.header.toLowerCase().replace(/\s|\.|'+/g, '')}-director-label`);
       if (element) {
         element.classList.remove('focused');
       }
@@ -33,7 +33,7 @@ export default function Section(props) {
     i++;
 
     if (text) {
-      console.log(text);
+      // console.log(text);
       return (
 
         <SubSection
@@ -60,7 +60,7 @@ export default function Section(props) {
   });
 
   return(
-    <Component className={'section'} ref={ref} id={`${props.header.toLowerCase().replace(/\s|\.+/g, '')}-section`}>
+    <Component className={'section'} ref={ref} id={`${props.header.toLowerCase().replace(/\s|\.|'+/g, '')}-section`}>
       {props.header ?       
         <p className={`section-header`} >
           {props.header}

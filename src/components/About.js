@@ -65,7 +65,7 @@ export default function About(props) {
     for (let content of pageContent) {
       if (content.type === 'section') {
         if (content.sectionHeader) {
-          console.log('sec header');
+          // console.log('sec header');
           tempDirectorContent.push({ sectionHeader: content.sectionHeader });
         }
 

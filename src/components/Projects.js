@@ -6,6 +6,7 @@ import './styles/page.css';
 
 import projectInclementPi from '../images/project_inclement_pi.png';
 import projectTheDrawingBoard from '../images/project_the_drawing_board.png';
+import projectGrandfathersCoffeeTable from '../images/project_grandfathers_coffee_table.png';
 
 const pageContent = [
   {
@@ -14,7 +15,7 @@ const pageContent = [
     text: [
       {
         subheader: 'The Drawing Board',
-        paragraphs: ['A collaborative project, The Drawing Board is a meeting and document review technology that gives proivdes users with multiple communication modes in a digital meeting. Participants can use laser pointers, highlighters and pens on any uploaded digital document - and save for later. All while communicating with colleagues via a peer to peer voice chat.'],
+        paragraphs: ['A collaborative project, The Drawing Board is a meeting and document review technology that provides users with multiple communication modes in a single digital setting. Participants can use laser pointers, highlighters and pens on any uploaded digital document - and save for later. All while communicating with colleagues via a peer to peer voice chat.'],
         link: 'https://www.thedrawingboard.site',
         img: projectTheDrawingBoard
       },
@@ -23,6 +24,12 @@ const pageContent = [
         paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
         // link: 'https://www.fontawesome.com',
         img: projectInclementPi
+      },
+      {
+        subheader: 'Grandfather\'s Coffee Table',
+        paragraphs: ['Play cards!'],
+        link: 'https://grandfatherscoffeetable.herokuapp.com/',
+        img: projectGrandfathersCoffeeTable
       }
     ]
   },
