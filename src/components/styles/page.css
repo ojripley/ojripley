@@ -98,11 +98,13 @@
   margin-right: 20px;
 }
 .page .sub-section .sub-section-image {
+  position: relative;
   width: 300px;
   border-radius: 10px;
   margin-right: 20px;
   border: solid #002539;
   transition: 0.15s;
+  z-index: 10;
 }
 .page .sub-section .sub-section-image:hover {
   scale: 2;

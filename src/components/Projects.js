@@ -4,19 +4,28 @@ import Section from './Section';
 
 import './styles/page.css';
 
+import projectInclementPi from '../images/project_inclement_pi.png';
+import projectTheDrawingBoard from '../images/project_the_drawing_board.png';
+
 const pageContent = [
-  // {
-  //   type: 'section',
-  //   sectionHeader: 'Icons and Images',
-  //   text: [
-  //     {
-  //       subheader: 'Font Awesome',
-  //       paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
-  //       link: 'https://www.fontawesome.com',
-  //       img: toolFontAweseome
-  //     },
-  //   ]
-  // },
+  {
+    type: 'section',
+    sectionHeader: 'Completed',
+    text: [
+      {
+        subheader: 'The Drawing Board',
+        paragraphs: ['A collaborative project, The Drawing Board is a meeting and document review technology that gives proivdes users with multiple communication modes in a digital meeting. Participants can use laser pointers, highlighters and pens on any uploaded digital document - and save for later. All while communicating with colleagues via a peer to peer voice chat.'],
+        link: 'https://www.thedrawingboard.site',
+        img: projectTheDrawingBoard
+      },
+      {
+        subheader: 'Inclement Pi',
+        paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
+        // link: 'https://www.fontawesome.com',
+        img: projectInclementPi
+      }
+    ]
+  },
 ];
 
 export default function Projects(props) {

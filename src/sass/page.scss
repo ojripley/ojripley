@@ -125,11 +125,13 @@
     }
   
     .sub-section-image {
+      position: relative;
       width: 300px;
       border-radius: 10px;
       margin-right: 20px;
       border: solid $midnight-blue;
       transition: 0.15s;
+      z-index: 10;
     }
 
     .sub-section-image:hover {
