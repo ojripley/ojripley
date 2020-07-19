@@ -60,9 +60,9 @@ export default function Section(props) {
   });
 
   return(
-    <Component className={'section'} ref={ref}>
+    <Component className={'section'} ref={ref} id={`${props.header.toLowerCase().replace(/\s|\.+/g, '')}-section`}>
       {props.header ?       
-        <p className={`section-header`} id={`${props.header.toLowerCase().replace(/\s|\.+/g, '')}-section`}>
+        <p className={`section-header`} >
           {props.header}
         </p>
       : null}

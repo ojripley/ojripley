@@ -9,7 +9,7 @@ export default function Director(props) {
     const element = document.querySelector(`#${identifier}-section`);
 
     if (element && element.getBoundingClientRect) {
-      window.scrollTo(0, element.getBoundingClientRect().top + window.scrollY - 20);
+      window.scrollTo(0, element.getBoundingClientRect().top + window.scrollY - 150);
     }
   };
 

@@ -43,7 +43,11 @@ export default function SubSection(props) {
     <Component className={'sub-section'} ref={ref} href={props.text.link ? props.text.link : null} >
       <div className={props.text.img ? 'image-title-container' : ''}>
 
-        {props.text.img ? <img src={props.text.img} className='sub-section-image' alt='Example of site.'></img> : null}
+        {props.text.img ? 
+          <div className='sub-section-image-bracer'>
+            <img src={props.text.img} className='sub-section-image' alt='Example of site.'></img>
+          </div>
+         : null}
         {props.text.subheader ?       
           <a className={`sub-section-header ${props.text.link ? 'sub-header-link' : ''}`} id={`${props.text.subheader.toLowerCase().replace(/\s|\.+/g, '')}-section`} href={props.text.link ? props.text.link : null} rel='noopener noreferrer' target='_blank'>
             {props.text.subheader}

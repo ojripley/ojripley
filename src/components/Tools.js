@@ -7,6 +7,9 @@ import toolTablerIcons from '../images/tool_tabler_icons.png';
 import toolCoolors from '../images/tool_coolors.png';
 import toolFontAweseome from '../images/tool_font_awesome.png';
 import toolUnsplash from '../images/tool_unsplash.png';
+import toolFavicon from '../images/tool_favicon.png';
+import toolSocket from '../images/tool_socket.png';
+import toolPeerJS from '../images/tool_peer_js.png';
 
 const pageContent = [
   {
@@ -30,6 +33,12 @@ const pageContent = [
         paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
         link: 'https://unsplash.com',
         img: toolUnsplash
+      },
+      {
+        subheader: 'Favicon.io',
+        paragraphs: [''],
+        link: 'https://www.favicon.io',
+        img: toolFavicon
       }
     ]
   },
@@ -39,11 +48,15 @@ const pageContent = [
     text: [
       {
         subheader: 'Socket.io',
-        paragraphs: ['I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! ']
+        paragraphs: [''],
+        link: 'https://www.socket.io',
+        img: toolSocket
       },
       {
         subheader: 'PeerJS',
-        paragraphs: ['Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away Over the Hills and Far Away ', 'elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke elementary backstroke ']
+        paragraphs: [''],
+        link: 'https://peerjs.com/index.html',
+        img: toolPeerJS
       }
     ]
   },
@@ -52,18 +65,10 @@ const pageContent = [
     sectionHeader: 'Miscellaneous',
     text: [
       {
-        subheader: 'testing',
-        paragraphs: ['I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! I love to run! ', 'testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test testing testing test test testing test ']
-      },
-      {
         subheader: 'Coolors.co',
         paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
         link: 'https://coolors.co',
         img: toolCoolors
-      },
-      {
-        subheader: 'Favicon.io',
-        paragraphs: ['']
       }
     ]
   }
@@ -129,8 +134,9 @@ export default function Tools(props) {
         <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>tools</span></p>
       </div>
       <div className='title-spacer'></div>
-      <p className={'page-description'}>A collection of useful software development/design tools! Suggested additions welcome.</p>
-      <p className={'page-secondary-description'}>Note - I don't own any of these, and do my best to give credit where credit is due.</p>
+      <p className={'page-description'}>A collection of useful software development/design tools! Suggestions welcome.</p>
+      <p className={'page-secondary-description'}>Disclaimer: I don't own any of these, nor did I contribute to any of these.</p>
+      <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p>
       <hr></hr>
       {contentComponents}
     </div>
