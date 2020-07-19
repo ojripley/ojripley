@@ -23,7 +23,7 @@ export default function Projects(props) {
   const [classNames, setClassNames] = useState('page page-offscreen');
 
   useEffect(() => {
-    props.setCurrentPage('TOOLS');
+    props.setCurrentPage('PROJECTS');
     setTimeout(() => {
       setClassNames('page');
     }, 100);
