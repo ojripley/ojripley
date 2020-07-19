@@ -8,6 +8,7 @@ import Director from './components/Director';
 import Bio from './components/Bio';
 import About from './components/About';
 import Tools from './components/Tools';
+import Projects from './components/Projects';
 
 import Nav from "./components/Nav";
 
@@ -61,6 +62,13 @@ function App() {
               <Tools setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Tools>
             )}
           />
+
+        <Route
+          path="/projects"
+          render={() => (
+            <Projects setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Projects>
+          )}
+        />
           
           <div className={currentPage === profile ? 'nav-wrapper' : 'nav-wrapper sideline'}>
             <div className={'nav-appendage'}>
