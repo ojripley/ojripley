@@ -69,8 +69,8 @@
   margin-left: 30px;
   margin-right: 40px;
   font-weight: bold;
-  border-bottom: solid black;
   width: fit-content;
+  font-style: italic;
 }
 .page .sub-section {
   margin-left: 60px;
@@ -111,25 +111,53 @@
   -ms-transform: translate(-25%, -25%);
   transform: translate(-25%, -25%);
 }
+.page .sub-section .sub-section-link-container {
+  display: flex;
+  flex-direction: column;
+}
 .page .sub-section .sub-header-link {
   text-decoration: none;
   outline: 0;
   color: black;
-  border-bottom: solid white;
+  border-bottom: solid black;
   width: fit-content;
 }
-.page .sub-section .sub-header-link .icon {
+.page .sub-section .sub-section-secondary-link {
+  border-bottom: solid 2px black;
+  text-decoration: none;
+  outline: 0;
+  color: black;
+  width: fit-content;
+  margin-top: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+.page .sub-section .sub-section-secondary-link .icon {
+  opacity: 100 !important;
+  margin-bottom: -2px;
+}
+.page .sub-section .icon {
   align-self: center;
   justify-self: center;
-  margin-left: 10px;
+  margin-left: 3px;
   opacity: 0;
   transition: 0.2s;
+  margin-bottom: 0px;
+  width: 0px;
 }
 .page .sub-section .sub-header-link:hover {
   border-bottom: solid black;
 }
 .page .sub-section .sub-header-link:hover .icon {
   opacity: 100;
+  width: 32px;
+}
+.page .sub-section .sub-section-secondary-link:hover {
+  border-bottom-color: black;
+}
+.page .sub-section .sub-section-secondary-link:hover .icon {
+  opacity: 100;
+  width: 20px;
 }
 .page .sub-section .paragraph {
   font-size: 15pt;

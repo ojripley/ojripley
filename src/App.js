@@ -39,7 +39,11 @@ function App() {
           <Route
             path="/about"
             render={() => (
-              <About setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></About>
+              <div className='page-container'>
+
+                <About setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></About>
+                <div className='dat-gap'></div>
+              </div>
             )}
           />
 

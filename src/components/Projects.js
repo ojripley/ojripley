@@ -17,18 +17,43 @@ const pageContent = [
         subheader: 'The Drawing Board',
         paragraphs: ['A collaborative project, The Drawing Board is a meeting and document review technology that provides users with multiple communication modes in a single digital setting. Participants can use laser pointers, highlighters and pens on any uploaded digital document - and save for later. All while communicating with colleagues via a peer to peer voice chat.'],
         link: 'https://www.thedrawingboard.site',
+        secondaryLink: {
+          link: 'https://www.github.com/ojripley/thedrawingboard',
+          title: 'Github Repo',
+          text: ''
+        },
+        // tertiaryLink: {
+        //   link: 'https://www.thedrawingboard.site',
+        //   title: 'Live Site',
+        //   text: ''
+        // },
         img: projectTheDrawingBoard
       },
       {
         subheader: 'Inclement Pi',
         paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
         // link: 'https://www.fontawesome.com',
+        secondaryLink: {
+          link: 'https://www.github.com/ojripley/inclementpi',
+          title: 'Github Repo',
+          text: ''
+        },
         img: projectInclementPi
       },
       {
         subheader: 'Grandfather\'s Coffee Table',
         paragraphs: ['Play cards!'],
         link: 'https://grandfatherscoffeetable.herokuapp.com/',
+        secondaryLink: {
+          link: 'https://www.github.com/ojripley/grandfatherscoffeetable',
+          title: 'Github Repo',
+          text: ''
+        },
+        // tertiaryLink: {
+        //   link: 'https://grandfatherscoffeetable.herokuapp.com/',
+        //   title: 'Live Site',
+        //   text: ''
+        // },
         img: projectGrandfathersCoffeeTable
       }
     ]
@@ -51,7 +76,6 @@ export default function Projects(props) {
     for (let content of pageContent) {
       if (content.type === 'section') {
         if (content.sectionHeader) {
-          console.log('sec header');
           tempDirectorContent.push({ sectionHeader: content.sectionHeader });
         }
 
