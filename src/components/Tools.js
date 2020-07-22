@@ -101,7 +101,6 @@ export default function Tools(props) {
           }
         }
       }
-
     }
 
     setDirectorContent(tempDirectorContent);

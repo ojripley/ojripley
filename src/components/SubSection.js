@@ -7,6 +7,14 @@ const Component = React.forwardRef((props, ref) => {
 });
 
 export default function SubSection(props) {
+  const focusImage = (id) => {
+    const image = document.querySelector(`#${id}`);
+    const icon = document.querySelector(`#${ props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '') }-close-icon`);
+
+    icon.classList.add('visible-close');
+
+    image.classList.add('focused-image');
+  }
   const [ref, entry] = useIntersect({ threshold: Array.from(Array(10).keys(), i => i / 10) });
 
   // console.log(entry);
@@ -46,9 +54,22 @@ export default function SubSection(props) {
       <div className={props.text.img ? 'image-title-container' : ''}>
 
         {props.text.img ? 
-          <div className='sub-section-image-bracer'>
-            <img src={props.text.img} className='sub-section-image' alt='Example of site.'></img>
-          </div>
+          <>
+            <div className='sub-section-image-bracer'>
+              <img src={props.text.img} className='sub-section-image' alt='Example of site.' id={`${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-image`} onClick={() => focusImage(`${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-image`)}></img>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-tabler icon-tabler-arrows-minimize" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ff0000" fill="none" stroke-linecap="round" stroke-linejoin="round" id={`${props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '')}-close-icon`}>
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <polyline points="5 9 9 9 9 5" />
+              <line x1="3" y1="3" x2="9" y2="9" />
+              <polyline points="5 15 9 15 9 19" />
+              <line x1="3" y1="21" x2="9" y2="15" />
+              <polyline points="19 9 15 9 15 5" />
+              <line x1="15" y1="9" x2="21" y2="3" />
+              <polyline points="19 15 15 15 15 19" />
+              <line x1="15" y1="15" x2="21" y2="21" />
+            </svg>
+          </>
          : null}
          <div className='sub-section-link-container'>
 

@@ -8,6 +8,7 @@ import Bio from './components/Bio';
 import About from './components/About';
 import Tools from './components/Tools';
 import Projects from './components/Projects';
+import ControlBar from './components/ControlBar';
 
 import Nav from "./components/Nav";
 
@@ -60,12 +61,16 @@ function App() {
             <Projects setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Projects>
           )}
         />
-          
           <div className={currentPage === profile ? 'nav-wrapper' : 'nav-wrapper sideline'}>
-            <div className={'nav-appendage'}>
-            {currentPage === profile ? <Bio></Bio> : <Director directorContent={directorContent}></Director>}
+            <ControlBar></ControlBar>
+            <div className='nav-container-2'>
+
+              <div className={'nav-appendage'}>
+                {currentPage === profile ? <Bio></Bio> : <Director directorContent={directorContent}></Director>}
+              </div>
+              <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} setPageClasses={setPageClasses}></Nav>
+              
             </div>
-            <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} setPageClasses={setPageClasses}></Nav>
           </div>
       </Router>
       <div className='dat-gap'></div>
