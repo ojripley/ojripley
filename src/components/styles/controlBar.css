@@ -28,19 +28,21 @@
   padding-left: 0px;
   align-self: flex-start;
   justify-self: center;
+  text-align: center;
+  width: 200px;
   margin: 0px;
 }
 .greeting-section .headshot-img {
-  width: 150px;
+  width: 200px;
   border-radius: 10px;
   align-self: center;
   margin-top: 5px;
   margin-bottom: 5px;
 }
 .greeting-section .bio-image-caption {
-  width: 150px;
+  width: 200px;
   text-align: center;
-  font-size: 8pt;
+  font-size: 9pt;
   align-self: center;
   font-style: italic;
   padding: 0px;

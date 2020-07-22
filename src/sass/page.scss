@@ -94,8 +94,10 @@
   .section {
     border-left: solid $midnight-blue;
     border-right: solid white;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    // background: linear-gradient(to right, rgba($color: $faded-blue, $alpha: 0.3), rgba($color: $faded-blue, $alpha: .07),rgba($color: $faded-blue, $alpha: .05), rgba($color: $faded-blue, $alpha: .03), rgba($color: $faded-blue, $alpha: .01));
+
   }
 
   .section-close-bracket {
@@ -121,7 +123,7 @@
     box-shadow: inset 3px 3px 15px 0px #dddddd;
     // box-shadow: inset 500px 0px 400px -300px rgba($color: #5599cc, $alpha: .5);
     // background: linear-gradient(to right, rgba($color: #3377cc, $alpha: .2), rgba($color: #3377cc, $alpha: .1) ,#ffffff, #ffffff, #fff, #fff);
-    
+    background-color: white;
     padding: 40px;
     margin-top: 60px;
     // border-top: solid $midnight-blue;

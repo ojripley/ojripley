@@ -77,8 +77,8 @@
 .page .section {
   border-left: solid #002539;
   border-right: solid white;
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .page .section-close-bracket {
   font-size: 22pt;
@@ -94,6 +94,7 @@
   margin-right: 30px;
   border-radius: 10px;
   box-shadow: inset 3px 3px 15px 0px #dddddd;
+  background-color: white;
   padding: 40px;
   margin-top: 60px;
 }

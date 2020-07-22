@@ -63,13 +63,14 @@ export default function Section(props) {
     <Component className={'section'} ref={ref} id={`${props.header.toLowerCase().replace(/\s|\.|'+/g, '')}-section`}>
       {props.header ?       
         <p className={`section-header`} >
-          {props.header + ` {`}
+          {props.header}
         </p>
       : null}
 
       {contentComponents}
 
-      <p className='section-close-bracket'>{`}`}</p>
+      {/* <p className='section-close-bracket'>{`}`}</p> */}
+      <p className='section-close-bracket'>&nbsp;&nbsp;&nbsp;</p>
     </Component>
   );
 };
