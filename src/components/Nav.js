@@ -25,7 +25,7 @@ export default function Nav(props) {
       </NavLink>
       <NavLink text={'projects'} address={'/projects'} setCurrentPage={props.setCurrentPage} currentPage={props.currentPage} setPageClasses={props.setPageClasses}>
       </NavLink>
-      <NavLink text={'tools'} address={'/tools'} setCurrentPage={props.setCurrentPage} currentPage={props.currentPage} setPageClasses={props.setPageClasses}>
+      <NavLink text={'tools'} address={'/tools'} setCurrentPage={props.setCurrentPage} currentPage={props.currentPage} setPageClasses={props.setPageClasses} id={'nav-link-bottom'}>
       </NavLink>
       {/* <NavLink text={'learn'} address={'learn'} setCurrentPage={props.setCurrentPage} currentPage={props.currentPage} setPageClasses={props.setPageClasses} id={'nav-link-bottom'}>
       </NavLink> */}

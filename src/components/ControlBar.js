@@ -8,13 +8,13 @@ export default function ControlBar() {
 
   return(
     <div className='control-bar'>
-      <div className='greeting-section'>
-          <p className='greeting'>Hi, I'm Owen Ripley</p>
+      <div className='profile-wrapping'>
+        <div className='greeting-section'>
+            <p className='greeting'>Hi, I'm <p className='greeting-emphasis'>Owen Ripley</p></p>
+        </div>
+        <div className='headshot-container'>
           <img src={headshot} alt='headshot of Owen' className='headshot-img'></img>
-        {/* <div className={'bio-image-container'}>
-        </div> */}
-        <div className='greeting-text-container'>
-          <p className='bio-image-caption'>Yes, the 'stache is fake.</p>
+          <p className='bio-image-caption'>Yes, the moustache is fake.</p>
           <p className='bio-image-caption'> Game on, facial recognition bots.</p>
         </div>
       </div>
@@ -22,7 +22,7 @@ export default function ControlBar() {
         <div className='media-links'>
           <a href="mailto:ojripley19@gmail.com" className='media-icon' target="_blank" rel="noopener noreferrer">
             <p className='media-caption'>
-              Email me! I love fan mail. And job offers.
+              Email me!
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-mail" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
@@ -32,7 +32,7 @@ export default function ControlBar() {
           </a>
           <a href='https://www.github.com/ojripley' className='media-icon' target="_blank" rel="noopener noreferrer">
             <p className='media-caption'>
-              Promise me you'll only look at the finished stuff
+              Browse my projects!
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-github" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
@@ -41,7 +41,7 @@ export default function ControlBar() {
           </a>
           <a href='https://www.instagram.com/ojripley' className='media-icon' target="_blank" rel="noopener noreferrer">
             <p className='media-caption'>
-              {'For the creeps &nbsp;&nbsp;: )'}
+              {`My personal side`}
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />
@@ -52,7 +52,7 @@ export default function ControlBar() {
           </a>
           <a href='https://www.paypal.me/ojripley' className='media-icon' target="_blank" rel="noopener noreferrer">
             <p className='media-caption'>
-              Inspired by the site? Buy me a coffee! Pay my rent!
+              Buy me a coffee!
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-paypal" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />

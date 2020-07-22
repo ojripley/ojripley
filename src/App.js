@@ -1,5 +1,5 @@
 // react imports
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Route} from "react-router-dom";
 
 // custom component imports
@@ -25,6 +25,15 @@ function App() {
   const [currentPage, setCurrentPage] = useState(profile);
   const [pageClasses, setPageClasses] = useState('page page-offscreen');
   const [directorContent, setDirectorContent] = useState([]);
+
+  useEffect(() => {    
+    if (currentPage === 'profile') {
+      const bioText = document.querySelector('.bio-text-section');
+      setTimeout(() => {
+        bioText.classList.add('bio-text-section-visible');
+      }, 200);
+    }
+  }, [currentPage]);
 
   return (
     <main className='app'>
@@ -69,7 +78,7 @@ function App() {
                 {currentPage === profile ? <Bio></Bio> : <Director directorContent={directorContent}></Director>}
               </div>
               <Nav setCurrentPage={setCurrentPage} currentPage={currentPage} setPageClasses={setPageClasses}></Nav>
-              
+
             </div>
           </div>
       </Router>

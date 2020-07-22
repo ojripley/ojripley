@@ -1,4 +1,5 @@
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap');
 
 .page {
   width: 50%;
@@ -89,6 +90,7 @@
     width: fit-content;
     font-style: italic;
     margin-bottom: 0px;
+    font-family: 'Quicksand';
   }
 
   .section {

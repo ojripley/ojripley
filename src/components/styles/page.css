@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap");
 .page {
   width: 50%;
   background-color: white;
@@ -73,6 +74,7 @@
   width: fit-content;
   font-style: italic;
   margin-bottom: 0px;
+  font-family: "Quicksand";
 }
 .page .section {
   border-left: solid #002539;

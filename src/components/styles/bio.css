@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap");
 .bio {
   width: 100%;
   height: 100%;
@@ -6,11 +7,33 @@
   width: 95%;
 }
 .bio .bio-text-section {
-  display: flex;
+  display: none;
+}
+.bio .bio-text {
+  margin-left: 20px;
+  margin-top: 0px;
+  font-size: 14pt;
+}
+.bio .bio-text-centered {
+  text-align: center;
+}
+.bio .bio-text-emphasized {
+  font-weight: bold;
+}
+.bio .bio-header {
+  font-family: "Quicksand";
+  font-weight: bold;
+  font-size: 18pt;
+  margin-bottom: 7px;
+}
+
+.bio-text-section-visible {
+  display: flex !important;
   flex-direction: column;
   margin-left: 40px;
   border-radius: 10px;
   margin-right: 40px;
+  transition-duration: 3s;
 }
 
 /*# sourceMappingURL=bio.css.map */

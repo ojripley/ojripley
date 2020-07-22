@@ -1,8 +1,9 @@
 @import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap');
 
 .control-bar {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   width: 100%;
   // justify-content: flex-end;
   // flex-direction: row;
@@ -18,61 +19,81 @@
   padding-bottom: 20px;
 }
 
+.profile-wrapping {
+  display: flex;
+  margin-left: 20px;
+  transition: .1s;
+}
+
 .greeting-section {
   display: flex;
   flex-direction: column;
-  // justify-content: center;
-  margin-left: 10px;
-
-  .greeting-text-container {
-    display: flex;
-    flex-direction: column;
-    // width: 300px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-    // margin-left: 40px;
-  }
-
+  // margin-left: -100px;
+  // height: inherit;
+  justify-content: center;
+  
   .greeting {
-    font-size: 15pt;
+    font-size: 22pt;
     // margin-left: 40px;
     padding-top: 0px;
     padding-left: 0px;
-    align-self: flex-start;
-    justify-self: center;
-    text-align: center;
-    width: 200px;
-    // margin-top: 10px;
-    margin: 0px;
-  }
-
-  .headshot-img {
-    width: 200px;
-    border-radius: 10px;
-    align-self: center;
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-
-  // .bio-image-container {
-  //   display: flex;
-  //   // margin-left: 300px;
-  //   // margin-left: 40px;
-  //   // margin-top: 40px;
-    
-  // }
-
-  .bio-image-caption {
-    width: 200px;
-    text-align: center;
-    font-size: 9pt;
-    align-self: center;
-    // margin-top: 20px;
-    font-style: italic;
     padding: 0px;
-    margin: 0px;
+    // align-self: flex-start;
+    // justify-self: center;
+    text-align: center;
+    // width: 220px;
+    margin-left: 0px;
+    margin-top: 1px;
+    margin-bottom: 10px;
+    margin-right: 25px;
+    // font-weight: lighter;
+    font-family: 'Quicksand';
+    overflow: hidden;
+    white-space: nowrap;
+    transition-duration: 0.2s;
+
+    .greeting-emphasis {
+      font-weight: bold;
+      font-size: 24pt;
+      margin-left: 0px;
+      margin-top: 1px;
+      overflow: hidden;
+      white-space: nowrap;
+      transition-duration: 0.2s;
+    }
   }
+
+}
+
+.headshot-container {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  // width: 300px;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.headshot-img {
+  width: 220px;
+  border-radius: 10px;
+  align-self: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.bio-image-caption {
+  // width: 220px;
+  text-align: center;
+  font-size: 11pt;
+  align-self: center;
+  // margin-top: 20px;
+  font-style: italic;
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Quicksand';
 }
 
 .control-section {
@@ -81,15 +102,11 @@
   .media-links {
     display: flex;
     flex-direction: column;
-    // margin-left: 20px;
-    // justify-content: flex-end;
+    justify-content: space-around;
     align-items: flex-end;
     margin-right: 10px;
-    // width: 100px;
-    // transition-duration: 2s;
-    // background-color: white;
-    // padding: 5px;
-    padding-top: 5px;
+    height: 100%;
+    // padding-top: 5px;
     
     
     // width: 270px;
@@ -113,7 +130,7 @@
         // margin-left: 10px;
         // opacity: 0;
         transition: 0.2s;
-        padding-left: 5px;
+        padding-right: 10px;
         margin-top: 0px;
         margin-bottom: 0px;
         font-size: 12pt;
@@ -158,6 +175,29 @@
 
       .media-caption {
         
+        visibility: hidden;
+        width: 0;
+        padding-right: 0px;
+        // opacity: 0;
+        transition-duration: 0s;
+        font-size: 0 !important;
+      }
+    }
+
+    .profile-wrapping {
+      // margin-left: 0px;
+    }
+
+    .greeting {
+      visibility: hidden;
+      width: 0;
+      padding-right: 0px;
+      margin-right: 0px;
+      // opacity: 0;
+      transition-duration: 0s;
+      font-size: 0 !important;
+
+      .greeting-emphasis {
         visibility: hidden;
         width: 0;
         padding-right: 0px;
