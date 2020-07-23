@@ -30,13 +30,13 @@ const pageContent = [
       },
       {
         subheader: 'Unsplash',
-        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
+        paragraphs: ['An extensive source of high quality images, submitted for free use.'],
         link: 'https://unsplash.com',
         img: toolUnsplash
       },
       {
         subheader: 'Favicon.io',
-        paragraphs: [''],
+        paragraphs: ['Generates favicons from images, text, and emoji! Flexible and easy to use'],
         link: 'https://www.favicon.io',
         img: toolFavicon
       }
@@ -48,13 +48,13 @@ const pageContent = [
     text: [
       {
         subheader: 'Socket.io',
-        paragraphs: [''],
+        paragraphs: ['Socket.io is my go-to for projects that require real time updating - this simple but effective API makes websockets easier than ever.'],
         link: 'https://www.socket.io',
         img: toolSocket
       },
       {
         subheader: 'PeerJS',
-        paragraphs: [''],
+        paragraphs: ['Why build your own TURN/STUN server when you can use PeerJS!? Focus on the data transmission, and let PeerJS take care of brokering the P2P connection.'],
         link: 'https://peerjs.com/index.html',
         img: toolPeerJS
       }
@@ -66,7 +66,7 @@ const pageContent = [
     text: [
       {
         subheader: 'Coolors.co',
-        paragraphs: ['A handmade collection of easy to use svg icons. Easy on the eyes and easier to use! Click to copy, and you\'re a paste away from visual candy.'],
+        paragraphs: ['A must-use for UI and graphic design creators. Easily create colour families and schemes by hand, from images, or randomized palettes!'],
         link: 'https://coolors.co',
         img: toolCoolors
       }

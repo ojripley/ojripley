@@ -31,7 +31,7 @@ const pageContent = [
       },
       {
         subheader: 'Inclement Pi',
-        paragraphs: ['"The web\'s most popular icon set." - You want it, they\'ve got it.'],
+        paragraphs: ['A custom built weather monitoring station, powered by a Raspberry Pi outfitted with pressure, humidity and camera sensors.'],
         // link: 'https://www.fontawesome.com',
         secondaryLink: {
           link: 'https://www.github.com/ojripley/inclementpi',
@@ -42,7 +42,7 @@ const pageContent = [
       },
       {
         subheader: 'Grandfather\'s Coffee Table',
-        paragraphs: ['Play cards!'],
+        paragraphs: ['A multiplayer card game hosting app. Sit at the table and play multiple various card games simultaneously - against real people!'],
         link: 'https://grandfatherscoffeetable.herokuapp.com/',
         secondaryLink: {
           link: 'https://www.github.com/ojripley/grandfatherscoffeetable',
