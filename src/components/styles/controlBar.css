@@ -48,13 +48,7 @@
 }
 
 .headshot-container {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  align-content: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-right: 40px;
+  display: none;
 }
 
 .headshot-img {
@@ -66,13 +60,7 @@
 }
 
 .bio-image-caption {
-  text-align: center;
-  font-size: 11pt;
-  align-self: center;
-  font-style: italic;
-  padding: 0px;
-  margin: 0px;
-  font-family: "Quicksand";
+  display: none;
 }
 
 .control-section {
@@ -140,6 +128,29 @@
   padding-right: 0px;
   transition-duration: 0s;
   font-size: 0 !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .headshot-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 40px;
+  }
+
+  .bio-image-caption {
+    display: unset;
+    text-align: center;
+    font-size: 11pt;
+    align-self: center;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+    font-family: "Quicksand";
+  }
 }
 
 /*# sourceMappingURL=controlBar.css.map */

@@ -1,20 +1,16 @@
 @import './variables';
 
 .nav-wrapper {
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  -ms-transform: translate(50%, -50%);
-  transform: translate(50%, -50%);
+  width: 100%;
   display: flex;
   flex-direction: column;
   border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
-  transition: 0.3s;
+  overflow-x: hidden;
+  
 
   .nav-appendage {
-    width: 1000px;
-    max-width: 1000px;
+    
     // max-height: min-content;
     height: inherit;
     display: flex;
@@ -34,24 +30,8 @@
     border-bottom-right-radius: 10px;
     // padding-top: 10px;
     // padding-bottom: 10px;
-    
-    .control-bar {
-      background-color: $midnight-blue;
-      border-top-right-radius: 10px;
-      display: flex;
-      justify-content: center;
-
-      .dark-mode-toggle {
-        display: flex;
-        justify-content: space-around;
-        width: 50%;
-        // padding: 10px;
-        background-color: white;
-        border-radius: 50px;
-        margin-top: 10px;
-        margin-bottom: 10px;
-      }
-    }
+    height: fit-content;
+    height: -moz-fit-content;
   
     .nav-link {
       position: relative;
@@ -118,5 +98,23 @@
 
   .nav-appendage {
     width: 200px;
+  }
+}
+
+
+@media screen and (min-width: 1200px) {
+  .nav-wrapper {
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    width: unset;
+    -ms-transform: translate(50%, -50%);
+    transform: translate(50%, -50%);
+    transition: 0.3s;
+    
+    .nav-appendage {
+      width: 1000px;
+      max-width: 1000px;
+    }
   }
 }

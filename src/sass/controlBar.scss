@@ -66,14 +66,7 @@
 }
 
 .headshot-container {
-  display: flex;
-  flex-direction: column;
-  height: 80%;
-  // width: 300px;
-  align-content: center;
-  justify-content: space-between;
-  text-align: center;
-  margin-right: 40px;
+  display: none;
 }
 
 .headshot-img {
@@ -85,15 +78,7 @@
 }
 
 .bio-image-caption {
-  // width: 220px;
-  text-align: center;
-  font-size: 11pt;
-  align-self: center;
-  // margin-top: 20px;
-  font-style: italic;
-  padding: 0px;
-  margin: 0px;
-  font-family: 'Quicksand';
+  display: none;
 }
 
 .control-section {
@@ -206,5 +191,30 @@
         font-size: 0 !important;
       }
     }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .headshot-container {
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    // width: 300px;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    margin-right: 40px;
+  }
+
+  .bio-image-caption {
+    display: unset;
+    text-align: center;
+    font-size: 11pt;
+    align-self: center;
+    // margin-top: 20px;
+    font-style: italic;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Quicksand';
   }
 }
