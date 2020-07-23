@@ -21,11 +21,7 @@
 .page {
   background-color: white;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
-}
-.page hr {
-  z-index: 1;
-  position: relative;
-  width: 90%;
+  transition: ease 0.4s;
 }
 .page .title-container {
   position: relative;
@@ -195,10 +191,6 @@
   margin-top: 0.5em;
 }
 
-.page-offscreen {
-  top: 200%;
-}
-
 .page-hidden {
   display: none;
 }
@@ -228,6 +220,10 @@
   .page .sub-section-header {
     font-size: 20pt !important;
   }
+
+  .page-offscreen {
+    top: 200%;
+  }
 }
 @media screen and (min-width: 1400px) {
   .menu-button {
@@ -242,7 +238,6 @@
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;
-    margin: 0px;
     border-radius: 10px;
   }
   .page .image-title-container {
@@ -254,6 +249,9 @@
   }
   .page .sub-section-header {
     font-size: 20pt !important;
+  }
+  .page-offscreen {
+    top: 200%;
   }
 }
 

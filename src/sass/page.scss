@@ -24,20 +24,16 @@
 }
 
 .page {
-  // height: 3000px;
   background-color: white;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
   // margin-left: 10px;
   // margin-right: 10px;
   // padding: 1em;
   // margin-bottom: 3em;
-
-
-  hr {
-    z-index: 1;
-    position: relative;
-    width: 90%;
-  }
+  transition: ease 0.4s;
+  // position: absolute;
+  // -ms-transform: translate(50%);
+  // transform: translate(50%);
 
   .title-container {
     position: relative;
@@ -282,9 +278,6 @@
   }
 }
 
-.page-offscreen {
-  top: 200%;
-}
 
 .page-hidden {
   display: none;
@@ -293,11 +286,12 @@
 @media screen 
 and (min-width : 1024px) 
 and (max-width : 1400px) {
-
+  
   .menu-button {
     display: none;
   }
-
+  
+  
   .page {
     width: 55%;
     position: absolute;
@@ -307,35 +301,41 @@ and (max-width : 1400px) {
     transform: translate(50%);
     transition: ease 0.4s;
     border-radius: 10px;
-
+    
     // .sub-header-link {
-
+      
       .icon {
         // display: none !important;
       }
-    // }
-
-    .image-title-container {
-      flex-direction: row !important;
-      align-items: center !important;
+      // }
+      
+      .image-title-container {
+        flex-direction: row !important;
+        align-items: center !important;
+      }
+      
+      .sub-section-image-bracer {
+        width: 50% !important;
+      }
+      
+      .sub-section-header {
+        font-size: 20pt !important;
+      }
     }
 
-    .sub-section-image-bracer {
-      width: 50% !important;
+    .page-offscreen {
+      top: 200%;
     }
 
-    .sub-section-header {
-      font-size: 20pt !important;
-    }
   }
-}
-
+  
 @media screen and (min-width: 1400px) {
 
   .menu-button {
     display: none;
   }
 
+  
   .page {
     width: 50%;
     position: absolute;
@@ -344,24 +344,30 @@ and (max-width : 1400px) {
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;
-    margin: 0px;
+    // margin: 0px;
     border-radius: 10px;
-
+    
+    
     .image-title-container {
       flex-direction: row !important;
       align-items: center !important;
     }
-
+    
     .sub-section-image-bracer {
       width: 50% !important;
     }
-
+    
     .sub-section-header {
       font-size: 20pt !important;
     }
-
+    
     .icon {
-        // display: none !important;
+      // display: none !important;
     }
   }
+
+  .page-offscreen {
+    top: 200%;
+  }
+  
 }
