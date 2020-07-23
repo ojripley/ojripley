@@ -4,9 +4,10 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  border-radius: 10px;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
   overflow-x: hidden;
+  // margin-left: 10px;
+  // margin-right: 10px;
   
 
   .nav-appendage {
@@ -92,17 +93,10 @@
 }
 
 .sideline {
-  right: 0%;
-  margin-right: 220px;
-  position: fixed;
-
-  .nav-appendage {
-    width: 200px;
-  }
+  display: none;
 }
 
-
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
   .nav-wrapper {
     position: absolute;
     top: 50%;
@@ -111,10 +105,25 @@
     -ms-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
     transition: 0.3s;
+    border-radius: 10px;
+    margin: 0 !important;
     
     .nav-appendage {
-      width: 1000px;
-      max-width: 1000px;
+      width: 900px;
+      max-width: 900px;
+    }
+  }
+
+  .sideline {
+    display: unset;
+    right: 0% !important;
+    margin-right: 220px !important;
+    position: fixed !important;
+  
+    .nav-appendage {
+      width: 200px !important;
     }
   }
 }
+
+

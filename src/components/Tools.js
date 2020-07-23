@@ -137,6 +137,7 @@ export default function Tools(props) {
       <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p>
       <hr></hr>
       {contentComponents}
-    </div>
+      </div>
+
   );
 };

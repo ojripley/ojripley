@@ -1,6 +1,6 @@
 // react imports
 import React, {useState, useEffect} from 'react';
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { BrowserRouter as Router, Route, Link} from "react-router-dom";
 
 // custom component imports
 import Director from './components/Director';
@@ -49,25 +49,61 @@ function App() {
           <Route
             path="/about"
             render={() => (
-              <div className='page-container'>
-
+              <>
+                <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="9" y1="6" x2="20" y2="6" />
+                    <line x1="9" y1="12" x2="20" y2="12" />
+                    <line x1="9" y1="18" x2="20" y2="18" />
+                    <line x1="5" y1="6" x2="5" y2="6.01" />
+                    <line x1="5" y1="12" x2="5" y2="12.01" />
+                    <line x1="5" y1="18" x2="5" y2="18.01" />
+                  </svg>
+                </Link>
                 <About setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></About>
                 <div className='dat-gap'></div>
-              </div>
+              </>
             )}
           />
 
           <Route
             path="/tools"
             render={() => (
-              <Tools setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Tools>
+              <>
+                <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <line x1="9" y1="6" x2="20" y2="6" />
+                  <line x1="9" y1="12" x2="20" y2="12" />
+                  <line x1="9" y1="18" x2="20" y2="18" />
+                  <line x1="5" y1="6" x2="5" y2="6.01" />
+                  <line x1="5" y1="12" x2="5" y2="12.01" />
+                  <line x1="5" y1="18" x2="5" y2="18.01" />
+                </svg>
+              </Link>
+                <Tools setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Tools>
+              </>
             )}
           />
 
         <Route
           path="/projects"
           render={() => (
+            <>
+              <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <path stroke="none" d="M0 0h24v24H0z" />
+                  <line x1="9" y1="6" x2="20" y2="6" />
+                  <line x1="9" y1="12" x2="20" y2="12" />
+                  <line x1="9" y1="18" x2="20" y2="18" />
+                  <line x1="5" y1="6" x2="5" y2="6.01" />
+                  <line x1="5" y1="12" x2="5" y2="12.01" />
+                  <line x1="5" y1="18" x2="5" y2="18.01" />
+                </svg>
+              </Link>
             <Projects setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Projects>
+            </>
           )}
         />
           <div className={currentPage === profile ? 'nav-wrapper' : 'nav-wrapper sideline'}>
