@@ -7,16 +7,6 @@ import './styles/page.css';
 const pageContent = [
   {
     type: 'section',
-    sectionHeader: 'Intro',
-    text: [
-      {
-        subheader: null,
-        paragraphs: ['Blah Blah Blah stuff about me']
-      }
-    ]
-  },
-  {
-    type: 'section',
     sectionHeader: 'test',
     text: [
       {
@@ -87,6 +77,11 @@ export default function About(props) {
           <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>about</span></p>
         </div>
         <div className='title-spacer'></div>
+
+        <p className={'page-description'}>Blah blah blah stuff about me.</p>
+        {/* <p className={'page-secondary-description'}>Disclaimer: I don't own any of these, nor did I contribute to any of these.</p> */}
+        {/* <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p> */}
+        <hr></hr>
         {contentComponents}
       </div>
     </>

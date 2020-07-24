@@ -35,6 +35,10 @@
   // -ms-transform: translate(50%);
   // transform: translate(50%);
 
+  hr{
+    width: 90%;
+  }
+
   .title-container {
     position: relative;
     width: 100%;
@@ -369,5 +373,5 @@ and (max-width : 1400px) {
   .page-offscreen {
     top: 200%;
   }
-  
+
 }

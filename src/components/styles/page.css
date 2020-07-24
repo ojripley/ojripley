@@ -23,6 +23,9 @@
   box-shadow: 2px 2px 5px 2px #aaaaaa;
   transition: ease 0.4s;
 }
+.page hr {
+  width: 90%;
+}
 .page .title-container {
   position: relative;
   width: 100%;
