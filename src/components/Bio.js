@@ -2,7 +2,7 @@ import React from 'react';
 
 import './styles/bio.css';
 
-import headshot from '../images/dapper_headshot.jpeg';
+// import headshot from '../images/dapper_headshot.jpeg';
 
 export default function Bio() {
 

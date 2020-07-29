@@ -51,7 +51,7 @@ function App() {
             render={() => (
               <>
                 <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#002539" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" />
                     <line x1="9" y1="6" x2="20" y2="6" />
                     <line x1="9" y1="12" x2="20" y2="12" />
@@ -72,15 +72,15 @@ function App() {
             render={() => (
               <>
                 <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                  <path stroke="none" d="M0 0h24v24H0z" />
-                  <line x1="9" y1="6" x2="20" y2="6" />
-                  <line x1="9" y1="12" x2="20" y2="12" />
-                  <line x1="9" y1="18" x2="20" y2="18" />
-                  <line x1="5" y1="6" x2="5" y2="6.01" />
-                  <line x1="5" y1="12" x2="5" y2="12.01" />
-                  <line x1="5" y1="18" x2="5" y2="18.01" />
-                </svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#002539" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" />
+                    <line x1="9" y1="6" x2="20" y2="6" />
+                    <line x1="9" y1="12" x2="20" y2="12" />
+                    <line x1="9" y1="18" x2="20" y2="18" />
+                    <line x1="5" y1="6" x2="5" y2="6.01" />
+                    <line x1="5" y1="12" x2="5" y2="12.01" />
+                    <line x1="5" y1="18" x2="5" y2="18.01" />
+                  </svg>
               </Link>
                 <Tools setCurrentPage={setCurrentPage} pageClasses={pageClasses} currentPage={currentPage} setPageClasses={setPageClasses} setDirectorContent={setDirectorContent}></Tools>
               </>
@@ -92,7 +92,7 @@ function App() {
           render={() => (
             <>
               <Link to='/profile' className='menu-button' onClick={() => setCurrentPage('profile')}>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#002539" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-list" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#002539" fill="none" strokeLinecap="round" strokeLinejoin="round">
                   <path stroke="none" d="M0 0h24v24H0z" />
                   <line x1="9" y1="6" x2="20" y2="6" />
                   <line x1="9" y1="12" x2="20" y2="12" />

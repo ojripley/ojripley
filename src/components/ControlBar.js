@@ -10,7 +10,7 @@ export default function ControlBar() {
     <div className='control-bar'>
       <div className='profile-wrapping'>
         <div className='greeting-section'>
-            <p className='greeting'>Hi, I'm <p className='greeting-emphasis'>Owen Ripley</p></p>
+            <div className='greeting'>Hi, I'm <p className='greeting-emphasis'>Owen Ripley</p></div>
         </div>
         <div className='headshot-container'>
           <img src={headshot} alt='headshot of Owen' className='headshot-img'></img>
