@@ -135,9 +135,6 @@
   transition: 0.15s;
   z-index: 10;
 }
-.page .sub-section .focused-image {
-  scale: 3;
-}
 .page .sub-section .icon-tabler-arrows-minimize {
   display: none;
 }
