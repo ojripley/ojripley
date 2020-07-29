@@ -136,7 +136,7 @@
       }
     }
     
-    .media-icon:hover {
+    .media-icon:active {
       border-bottom: solid white;
   
       .media-caption {
@@ -193,6 +193,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+
+  .media-icon:hover {
+    border-bottom: solid white !important;
+  }
 
   .control-bar {
     border-top-left-radius: 10px;

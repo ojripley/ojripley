@@ -47,10 +47,10 @@
 .nav-wrapper .nav #nav-link-bottom {
   border-bottom-right-radius: 10px;
 }
-.nav-wrapper .nav .nav-link:hover {
+.nav-wrapper .nav .nav-link:active {
   cursor: pointer;
 }
-.nav-wrapper .nav .nav-link:hover .link-text {
+.nav-wrapper .nav .nav-link:active .link-text {
   font-size: 19pt;
   border: solid #002539;
 }
@@ -95,6 +95,14 @@
   }
   .sideline .nav-appendage {
     width: 200px !important;
+  }
+
+  .nav-link:hover {
+    cursor: pointer;
+  }
+  .nav-link:hover .link-text {
+    font-size: 19pt;
+    border: solid #002539;
   }
 }
 

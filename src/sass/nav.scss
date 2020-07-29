@@ -68,7 +68,7 @@
       border-bottom-right-radius: 10px;
     }
     
-    .nav-link:hover {
+    .nav-link:active {
       cursor: pointer;
       
       .link-text {
@@ -124,6 +124,15 @@
       width: 200px !important;
     }
   }
+
+  .nav-link:hover {
+      cursor: pointer;
+      
+      .link-text {
+        font-size: 19pt;
+        border: solid $midnight-blue;
+      }
+    }
 }
 
 

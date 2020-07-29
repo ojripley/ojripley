@@ -97,7 +97,7 @@
   overflow: hidden;
   white-space: nowrap;
 }
-.control-section .media-links .media-icon:hover {
+.control-section .media-links .media-icon:active {
   border-bottom: solid white;
 }
 .control-section .site-controls {
@@ -129,6 +129,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .media-icon:hover {
+    border-bottom: solid white !important;
+  }
+
   .control-bar {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
