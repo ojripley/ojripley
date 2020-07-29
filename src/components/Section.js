@@ -11,8 +11,6 @@ const Component = React.forwardRef((props, ref) => {
 export default function Section(props) {
   const [ref, entry] = useIntersect({ threshold: Array.from(Array(10).keys(), i => i / 10)});
 
-  // console.log(entry);
-
   if (props.header) {
     if (entry.intersectionRatio > 0) {
       const element = document.querySelector(`#${props.header.toLowerCase().replace(/\s|\.|'+/g, '')}-director-label`);

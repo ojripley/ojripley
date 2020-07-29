@@ -133,11 +133,10 @@ export default function Tools(props) {
       </div>
       <div className='title-spacer'></div>
       <p className={'page-description'}>A collection of useful software development/design tools! Suggestions welcome.</p>
-      <p className={'page-secondary-description'}>I don't own any of these, and I do my best to give credit where credit is due.</p>
-      <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p>
+      <p className={'page-secondary-description'}>I don't own any of these! If you find a useful resource, please consider donating to its creator.</p>
+      {/* <p className='page-secondary-description'></p> */}
       <hr></hr>
       {contentComponents}
       </div>
-
   );
 };

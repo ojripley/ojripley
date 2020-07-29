@@ -114,6 +114,7 @@
   font-size: 16pt;
   font-weight: bold;
   display: flex;
+  margin-left: 20px;
 }
 .page .sub-section .image-title-container {
   display: flex;

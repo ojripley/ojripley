@@ -7,11 +7,19 @@ import './styles/page.css';
 const pageContent = [
   {
     type: 'section',
-    sectionHeader: 'test',
+    sectionHeader: 'Work Experience',
     text: [
       {
-        subheader: 'testing',
-        paragraphs: ['testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing testing ']
+        subheader: 'Shoal App Inc.',
+        paragraphs: ['Product Director / Lead Software Developer | April 2020 - Present', '-- Manages a team of contractors developing Shoal\'s product, a mobile app', '-- Developed and maintains the company\'s marketing website']
+      },
+      {
+        subheader: 'Enbridge Inc.',
+        paragraphs: ['Technical Documentation Specilist | May 2018 - September 2018', ' -- Constructed new documents and templates using Microsoft Excel and Visio', '-- Completed a 4 month document conversion project in half the estimated time']
+      },
+      {
+        subheader: 'Chatham-Kent Recreation',
+        paragraphs: ['Lifeguard and Swim Instructor | May 2014 - January 2019', ' -- Taught youth swimming lessons, competitive swim team, and senior aquafit', '-- Oversaw the training of recruit lifeguards']
       }
     ]
   }
@@ -78,8 +86,8 @@ export default function About(props) {
         </div>
         <div className='title-spacer'></div>
 
-        <p className={'page-description'}>Blah blah blah stuff about me.</p>
-        {/* <p className={'page-secondary-description'}>Disclaimer: I don't own any of these, nor did I contribute to any of these.</p> */}
+        <p className={'page-description'}>A tech enthusiast with a background in computer science. I have interests in nature and technological innovation, and I look foward to building a future where they work in harmony!</p>
+        {/* <p className={'page-secondary-description'}></p> */}
         {/* <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p> */}
         <hr></hr>
         {contentComponents}

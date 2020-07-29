@@ -7,6 +7,7 @@ import './styles/page.css';
 import projectInclementPi from '../images/project_inclement_pi.png';
 import projectTheDrawingBoard from '../images/project_the_drawing_board.png';
 import projectGrandfathersCoffeeTable from '../images/project_grandfathers_coffee_table.png';
+import projectToJSX from '../images/project_to-jsx.png';
 
 const pageContent = [
   {
@@ -39,6 +40,17 @@ const pageContent = [
           text: ''
         },
         img: projectInclementPi
+      },
+      {
+        subheader: 'To-JSX',
+        paragraphs: ['An easy to use tool that converts HTML to equivalent JSX syntax. Features coming soon: syntax highlighting, and JSX to HTML!'],
+        link: 'https://tojsx.com',
+        secondaryLink: {
+          link: 'https://www.github.com/ojripley/to-jsx',
+          title: 'Github Repo',
+          text: ''
+        },
+        img: projectToJSX
       },
       {
         subheader: 'Grandfather\'s Coffee Table',
