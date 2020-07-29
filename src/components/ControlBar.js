@@ -41,7 +41,7 @@ export default function ControlBar() {
           </a>
           <a href='https://www.instagram.com/ojripley' className='media-icon' target="_blank" rel="noopener noreferrer">
             <p className='media-caption'>
-              My life outside of coding
+              My life outside coding
             </p>
             <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-brand-instagram" width="32" height="32" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#ffffff" fill="none" strokeLinecap="round" strokeLinejoin="round">
               <path stroke="none" d="M0 0h24v24H0z" />

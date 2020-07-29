@@ -21,7 +21,7 @@
   justify-content: center;
 }
 .greeting-section .greeting {
-  font-size: 22pt;
+  font-size: 18pt;
   padding-top: 0px;
   padding-left: 0px;
   padding: 0px;
@@ -37,7 +37,7 @@
 }
 .greeting-section .greeting .greeting-emphasis {
   font-weight: bold;
-  font-size: 24pt;
+  font-size: 20pt;
   margin-left: 0px;
   margin-top: 1px;
   overflow: hidden;
@@ -79,7 +79,6 @@
   color: white;
   align-items: center;
   outline: 0;
-  padding-right: 3px;
   width: fit-content;
   border-bottom: solid #002539;
   margin-top: 0px;
@@ -88,10 +87,10 @@
 }
 .control-section .media-links .media-icon .media-caption {
   transition: 0.2s;
-  padding-right: 10px;
+  padding-right: 5px;
   margin-top: 0px;
   margin-bottom: 0px;
-  font-size: 12pt;
+  font-size: 10pt;
   font-weight: thin;
   transition-duration: 0.2s;
   overflow: hidden;
@@ -131,6 +130,17 @@
 @media screen and (min-width: 1024px) {
   .media-icon:hover {
     border-bottom: solid white !important;
+  }
+
+  .media-caption {
+    font-size: 12pt !important;
+  }
+
+  .greeting {
+    font-size: 22pt !important;
+  }
+  .greeting .greeting-emphasis {
+    font-size: 24pt !important;
   }
 
   .control-bar {

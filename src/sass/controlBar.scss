@@ -31,7 +31,7 @@
   justify-content: center;
   
   .greeting {
-    font-size: 22pt;
+    font-size: 18pt;
     // margin-left: 40px;
     padding-top: 0px;
     padding-left: 0px;
@@ -52,7 +52,7 @@
 
     .greeting-emphasis {
       font-weight: bold;
-      font-size: 24pt;
+      font-size: 20pt;
       margin-left: 0px;
       margin-top: 1px;
       overflow: hidden;
@@ -102,7 +102,7 @@
       align-items: center;
       // justify-content: flex-end;
       outline: 0;
-      padding-right: 3px;
+      // padding-right: 3px;
       width: fit-content;
       border-bottom: solid $midnight-blue;
       margin-top: 0px;
@@ -113,10 +113,10 @@
         // margin-left: 10px;
         // opacity: 0;
         transition: 0.2s;
-        padding-right: 10px;
+        padding-right: 5px;
         margin-top: 0px;
         margin-bottom: 0px;
-        font-size: 12pt;
+        font-size: 10pt;
         font-weight: thin;
         // width: fit-content;
         // width: -moz-fit-content;
@@ -196,6 +196,18 @@
 
   .media-icon:hover {
     border-bottom: solid white !important;
+
+  }
+  .media-caption {
+    font-size: 12pt !important;
+  }
+
+  .greeting {
+    font-size: 22pt !important;
+
+    .greeting-emphasis {
+      font-size: 24pt !important;
+    }
   }
 
   .control-bar {
