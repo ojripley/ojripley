@@ -7,15 +7,17 @@ const Component = React.forwardRef((props, ref) => {
 });
 
 export default function SubSection(props) {
-  const focusImage = (id) => {
-    const image = document.querySelector(`#${id}`);
-    const icon = document.querySelector(`#${ props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '') }-close-icon`);
-
-    icon.classList.add('visible-close');
-
-    image.classList.add('focused-image');
-  }
   const [ref, entry] = useIntersect({ threshold: Array.from(Array(10).keys(), i => i / 10) });
+  
+  // const focusImage = (id) => {
+  //   const image = document.querySelector(`#${id}`);
+  //   const icon = document.querySelector(`#${ props.text.subheader.toLowerCase().replace(/\s|\.|'+/g, '') }-close-icon`);
+
+  //   icon.classList.add('visible-close');
+
+  //   image.classList.add('focused-image');
+  // }
+  
 
   // console.log(entry);
 
