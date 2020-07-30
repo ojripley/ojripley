@@ -36,7 +36,7 @@ const pageContent = [
       },
       {
         subheader: 'Favicon.io',
-        paragraphs: ['Generates favicons from images, text, and emoji! Flexible and easy to use'],
+        paragraphs: ['Generates favicons from images, text, and emoji! Flexible and easy to use.'],
         link: 'https://www.favicon.io',
         img: toolFavicon
       }

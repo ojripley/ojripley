@@ -17,7 +17,7 @@
   flex-direction: column;
   position: relative;
   margin-left: auto;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%), url("../../images/rocky_waters_vertical_slice.jpeg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%), url("../../images/rocky_waters.jpeg");
   border-bottom-right-radius: 10px;
   height: fit-content;
   height: -moz-fit-content;
