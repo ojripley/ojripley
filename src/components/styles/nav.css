@@ -41,7 +41,6 @@
   align-self: center;
   padding: 7px;
   margin: 0 auto;
-  transition: 0.2s ease;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.9);
 }
