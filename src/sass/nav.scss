@@ -121,13 +121,13 @@
   }
 
   .nav-link:hover {
-      cursor: pointer;
+    cursor: pointer;
       
-      .link-text {
-        font-size: 19pt;
-        border: solid $midnight-blue;
-      }
+    .link-text {
+      font-size: 19pt !important;
+      border: solid $midnight-blue;
     }
+  }
 }
 
 

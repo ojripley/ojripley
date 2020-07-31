@@ -101,7 +101,7 @@
     cursor: pointer;
   }
   .nav-link:hover .link-text {
-    font-size: 19pt;
+    font-size: 19pt !important;
     border: solid #002539;
   }
 }
