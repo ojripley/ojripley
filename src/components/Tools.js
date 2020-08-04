@@ -10,6 +10,7 @@ import toolUnsplash from '../images/tool_unsplash.png';
 import toolFavicon from '../images/tool_favicon.png';
 import toolSocket from '../images/tool_socket.png';
 import toolPeerJS from '../images/tool_peer_js.png';
+import toolCompressJPEG from '../images/tool_compress_jpeg.png';
 
 const pageContent = [
   {
@@ -39,6 +40,12 @@ const pageContent = [
         paragraphs: ['Generates favicons from images, text, and emoji! Flexible and easy to use.'],
         link: 'https://www.favicon.io',
         img: toolFavicon
+      },
+      {
+        subheader: 'Compress JPEG',
+        paragraphs: ['Compress images with fine control over quality and data size.'],
+        link: 'https://compressjpeg.com',
+        img: toolCompressJPEG
       }
     ]
   },
