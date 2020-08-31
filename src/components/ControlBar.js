@@ -59,6 +59,26 @@ export default function ControlBar() {
               <path d="M10 13l2.538-.003c2.46 0 4.962-2.497 4.962-4.997 0-3-1.89-5-4.962-5H7c-.5 0-1 .5-1 1L4 18c0 .5.5 1 1 1h2.846L9 14c.089-.564.43-1 1-1zm7.467-5.837C19.204 8.153 20 10 20 12c0 2.467-2.54 4.505-5 4.505h.021-2.629l-.576 3.65a.998.998 0 01-.988.844l-2.712-.002a.5.5 0 01-.494-.578L7.846 19" />
             </svg>
           </a>
+          {/* <a href='https://www.paypal.me/ojripley' className='media-icon' target="_blank" rel="noopener noreferrer">
+            <p className='media-caption'>
+              Scan to open on phone
+            </p>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-qrcode" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" />
+              <rect x="4" y="4" width="6" height="6" rx="1" />
+              <line x1="7" y1="17" x2="7" y2="17.01" />
+              <rect x="14" y="4" width="6" height="6" rx="1" />
+              <line x1="7" y1="7" x2="7" y2="7.01" />
+              <rect x="4" y="14" width="6" height="6" rx="1" />
+              <line x1="17" y1="7" x2="17" y2="7.01" />
+              <line x1="14" y1="14" x2="17" y2="14" />
+              <line x1="20" y1="14" x2="20" y2="14.01" />
+              <line x1="14" y1="14" x2="14" y2="17" />
+              <line x1="14" y1="20" x2="17" y2="20" />
+              <line x1="17" y1="17" x2="20" y2="17" />
+              <line x1="20" y1="17" x2="20" y2="20" />
+            </svg>
+          </a> */}
         </div>
 
         {/* <div className='site-controls'>
