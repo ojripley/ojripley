@@ -19,7 +19,7 @@
   margin-left: auto;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 80%), url("../../images/rocky_waters_vertical_slice.jpeg");
   background-size: cover;
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 30px;
   height: fit-content;
   height: -moz-fit-content;
 }
@@ -39,13 +39,14 @@
   font-size: 16pt;
   position: relative;
   align-self: center;
-  padding: 7px;
+  padding: 16px;
+  padding-bottom: 19px;
   margin: 0 auto;
-  border-radius: 10px;
+  border-radius: 30px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .nav-wrapper .nav #nav-link-bottom {
-  border-bottom-right-radius: 10px;
+  border-bottom-right-radius: 30px;
 }
 .nav-wrapper .nav .nav-link:active {
   cursor: pointer;
@@ -79,7 +80,7 @@
     -ms-transform: translate(50%, -50%);
     transform: translate(50%, -50%);
     transition: 0.3s;
-    border-radius: 10px;
+    border-radius: 30px;
     margin: 0 !important;
   }
   .nav-wrapper .nav-appendage {

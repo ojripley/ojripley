@@ -49,12 +49,12 @@
   font-size: 16pt;
   font-weight: bold;
   border: solid thin #dddddd;
-  padding: 2px;
+  padding: 5px;
   margin-left: 2px;
-  border-radius: 5px;
+  border-radius: 7px;
   color: #AEF6FF;
-  padding-top: 1px;
-  padding-bottom: 1px;
+  padding-top: 2px;
+  padding-bottom: 5px;
 }
 .page .title-spacer {
   height: 2em;
@@ -104,7 +104,7 @@
 .page .sub-section {
   margin-left: 15px;
   margin-right: 15px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: inset 3px 3px 15px 0px #dddddd;
   background-color: white;
   padding: 30px;
@@ -129,7 +129,7 @@
 .page .sub-section .sub-section-image {
   position: relative;
   width: 100%;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-right: 20px;
   border: solid #002539;
   transition: 0.15s;
@@ -209,7 +209,7 @@
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   .page .image-title-container {
     flex-direction: row !important;
@@ -239,7 +239,7 @@
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;
-    border-radius: 10px;
+    border-radius: 30px;
   }
   .page .image-title-container {
     flex-direction: row !important;

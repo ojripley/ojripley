@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Bitter:400i|Quicksand:400&display=swap");
 .bio {
   width: 100%;
   height: 100%;
@@ -21,7 +20,6 @@
   font-weight: bold;
 }
 .bio .bio-header {
-  font-family: "Quicksand";
   font-weight: bold;
   font-size: 18pt;
   margin-bottom: 7px;
@@ -32,7 +30,7 @@
   display: flex !important;
   flex-direction: column;
   margin-left: 40px;
-  border-radius: 10px;
+  border-radius: 30px;
   margin-right: 40px;
   transition-duration: 3s;
 }
