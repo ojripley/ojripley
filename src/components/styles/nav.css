@@ -39,10 +39,10 @@
   font-size: 16pt;
   position: relative;
   align-self: center;
-  padding: 16px;
-  padding-bottom: 19px;
+  padding: 9px;
+  padding-bottom: 12px;
   margin: 0 auto;
-  border-radius: 30px;
+  border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.9);
 }
 .nav-wrapper .nav #nav-link-bottom {
@@ -103,7 +103,6 @@
   }
   .nav-link:hover .link-text {
     font-size: 19pt !important;
-    border: solid #002539;
   }
 }
 
