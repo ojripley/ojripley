@@ -20,7 +20,7 @@
     flex-direction: column;
     position: relative;
     margin-left: auto;
-    background: linear-gradient(to bottom, rgba(0,0,0,0.0) 20%, rgba(0,0,0,0.0) 80%), url('../../images/rocky_waters_vertical_slice.jpeg');
+    // background: linear-gradient(to bottom, rgba(0,0,0,0.0) 20%, rgba(0,0,0,0.0) 80%), url('../../images/rocky_waters_vertical_slice.jpeg');
     background-size: cover;
     // background-color: $midnight-blue;
     // border-top-right-radius: 10px;
@@ -74,8 +74,12 @@
     }
 
     .current-page {
-      background-color: white;
+      // background-color: white;
       color: #002539;
+
+      .link-text {
+        box-shadow: inset 1px 1px 10px 0px #000000;
+      }
     }
   
     .selected-section {

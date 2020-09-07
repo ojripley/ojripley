@@ -24,8 +24,8 @@
 }
 
 .page {
-  background-color: white;
-  box-shadow: 2px 2px 5px 2px #aaaaaa;
+  // background-color: white;
+  // box-shadow: 2px 2px 5px 2px #aaaaaa;
   // margin-left: 10px;
   // margin-right: 10px;
   // padding: 1em;
@@ -42,7 +42,7 @@
   .title-container {
     position: relative;
     width: 100%;
-    background-color: $midnight-blue;
+    // background-color: $midnight-blue;
     border-top-left-radius: inherit;
     border-top-right-radius: inherit;
     margin-bottom: -5em;
@@ -57,17 +57,18 @@
     margin-top: 0px;
     padding-top: 1em;
     padding-bottom: 1em;
-    color: white;
+    // color: white;
     letter-spacing: 0.06em;
 
     .title-emphasis {
       font-size: 16pt;
       font-weight: bold;
-      border: solid thin #dddddd;
+      border: solid thin $midnight-blue;
       padding: 5px;
       margin-left: 2px;
       border-radius: 7px;
-      color: $electric-blue;
+      // color: $electric-blue;
+      color: $midnight-blue;
       padding-top: 2px;
       padding-bottom: 5px;
     }
@@ -100,7 +101,7 @@
     // margin-left: 20px;
     padding-left: 10px;
     margin-left: 0px;
-    border-top: solid $midnight-blue;
+    // border-top: solid $midnight-blue;
     // margin-right: 40px;
     font-weight: bold;
     // border-bottom: solid black;
@@ -111,8 +112,8 @@
   }
 
   .section {
-    border-left: solid $midnight-blue;
-    border-right: solid white;
+    // border-left: solid $midnight-blue;
+    // border-right: solid white;
     margin-left: 10px;
     margin-right: 10px;
     // background: linear-gradient(to right, rgba($color: $faded-blue, $alpha: 0.3), rgba($color: $faded-blue, $alpha: .07),rgba($color: $faded-blue, $alpha: .05), rgba($color: $faded-blue, $alpha: .03), rgba($color: $faded-blue, $alpha: .01));
@@ -124,7 +125,7 @@
     padding-left: 10px;
     font-weight: bold;
     font-style: italic;
-    border-bottom: solid $midnight-blue;
+    // border-bottom: solid $midnight-blue;
     width: fit-content;
     width: -moz-fit-content;
   }
@@ -138,7 +139,7 @@
     // border-top-left-radius: 10px;
     // border-bottom-left-radius: 10px;
     // border: solid $midnight-blue;
-    box-shadow: inset 3px 3px 15px 0px #dddddd;
+    box-shadow: 0px 10px 15px 0px #dddddd;
     // box-shadow: inset 500px 0px 400px -300px rgba($color: #5599cc, $alpha: .5);
     // background: linear-gradient(to right, rgba($color: #3377cc, $alpha: .2), rgba($color: #3377cc, $alpha: .1) ,#ffffff, #ffffff, #fff, #fff);
     background-color: white;

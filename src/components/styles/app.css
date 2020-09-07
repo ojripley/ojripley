@@ -11,6 +11,8 @@ body {
   overflow-x: hidden;
   font-family: "Source Sans Pro";
   font-size: 13pt;
+  background-color: #f7f8ff;
+  color: #556677;
 }
 
 html {
