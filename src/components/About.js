@@ -83,13 +83,13 @@ export default function About(props) {
       <div className={classNames}>
         <div className={'title-container'}>
           <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>about</span></p>
-        </div>
-        <div className='title-spacer'></div>
-
         <p className={'page-description'}>A tech enthusiast with a background in computer science. I have interests in nature and technological innovation, and I look foward to building a future where they work in harmony!</p>
+        </div>
+        {/* <div className='title-spacer'></div> */}
+
         {/* <p className={'page-secondary-description'}></p> */}
         {/* <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p> */}
-        <hr></hr>
+        {/* <hr></hr> */}
         {contentComponents}
       </div>
     </>

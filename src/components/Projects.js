@@ -129,12 +129,12 @@ export default function Projects(props) {
     <div className={classNames}>
       <div className={'title-container'}>
         <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>projects</span></p>
-      </div>
-      <div className='title-spacer'></div>
       <p className={'page-description'}>A slowly growing list of things made by yours truly.</p>
+      </div>
+      {/* <div className='title-spacer'></div> */}
       {/* <p className={'page-secondary-description'}>Disclaimer: I don't own any of these, nor did I contribute to any of these.</p> */}
       {/* <p className='page-secondary-description'>If you find any of these tools useful, please consider donating to its creator.</p> */}
-      <hr></hr>
+      {/* <hr></hr> */}
       {contentComponents}
     </div>
   );
