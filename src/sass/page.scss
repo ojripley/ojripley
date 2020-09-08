@@ -42,13 +42,18 @@
   .title-container {
     position: relative;
     width: 100%;
-    // background-color: $midnight-blue;
-    border-top-left-radius: inherit;
-    border-top-right-radius: inherit;
-    margin-bottom: -5em;
+    background-color: $midnight-blue;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+    // margin-bottom: -5em;
     z-index: 2;
+    // border-radius: 30px;
+    padding-bottom: 2em;
+    // position: absolute;
+    // position: fixed;
+    // top: 15px;
+    color: $soft-blue;
   }
-
 
   .page-title {
     font-size: 18pt;
@@ -63,12 +68,12 @@
     .title-emphasis {
       font-size: 16pt;
       font-weight: bold;
-      border: solid thin $midnight-blue;
+      border: solid thin $electric-blue;
       padding: 5px;
       margin-left: 2px;
       border-radius: 7px;
-      // color: $electric-blue;
-      color: $midnight-blue;
+      color: $electric-blue;
+      // color: $midnight-blue;
       padding-top: 2px;
       padding-bottom: 5px;
     }
@@ -139,10 +144,10 @@
     // border-top-left-radius: 10px;
     // border-bottom-left-radius: 10px;
     // border: solid $midnight-blue;
-    box-shadow: 0px 10px 15px 0px #dddddd;
+    box-shadow: 0px 15px 15px 0px #dddddd;
     // box-shadow: inset 500px 0px 400px -300px rgba($color: #5599cc, $alpha: .5);
     // background: linear-gradient(to right, rgba($color: #3377cc, $alpha: .2), rgba($color: #3377cc, $alpha: .1) ,#ffffff, #ffffff, #fff, #fff);
-    background-color: white;
+    // background-color: $midnight-blue;
     padding: 30px;
     margin-top: 60px;
     // border-top: solid $midnight-blue;
@@ -300,7 +305,7 @@ and (max-width : 1400px) {
     width: 55%;
     position: absolute;
     right: 67%;
-    top: 5%;
+    top: 0%;
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;
@@ -344,7 +349,7 @@ and (max-width : 1400px) {
     width: 50%;
     position: absolute;
     right: 55%;
-    top: 5%;
+    top: 0%;
     -ms-transform: translate(50%);
     transform: translate(50%);
     transition: ease 0.4s;

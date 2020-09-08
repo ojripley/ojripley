@@ -137,12 +137,12 @@ export default function Tools(props) {
     <div className={classNames}>
       <div className={'title-container'}>
         <p className={'page-title'}>ojripley.com/<span className={'title-emphasis'}>tools</span></p>
-      </div>
-      <div className='title-spacer'></div>
       <p className={'page-description'}>A collection of useful software development/design tools! Suggestions welcome.</p>
       <p className={'page-secondary-description'}>I don't own any of these! If you find a useful resource, please consider donating to its creator.</p>
+      </div>
+      {/* <div className='title-spacer'></div> */}
       {/* <p className='page-secondary-description'></p> */}
-      <hr></hr>
+      {/* <hr></hr> */}
       {contentComponents}
       </div>
   );

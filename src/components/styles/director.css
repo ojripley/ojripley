@@ -11,12 +11,18 @@
   width: fit-content;
   margin-top: 0px;
   margin-bottom: 0px;
+  border: solid thin rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: 0.1s;
 }
 .director .director-label:hover {
   cursor: pointer;
   border: solid thin black;
   box-shadow: 2px 2px 5px 2px #aaaaaa;
-  border-radius: 10px;
+  scale: 1.1;
+}
+.director .director-label:active {
+  box-shadow: inset 0px 2px 10px -5px #000000;
 }
 .director .label-header {
   margin-left: 1em;

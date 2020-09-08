@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  box-shadow: 2px 2px 5px 2px #aaaaaa;
+  box-shadow: 0px 15px 15px 0px #dddddd;
   overflow-x: hidden;
 
   .nav-appendage {
@@ -51,7 +51,9 @@
         padding-bottom: 12px;
         margin: 0 auto;
         border-radius: 15px;
-        background-color: rgba($color:#ffffff, $alpha: 0.9);
+        // background-color: rgba($color:#ffffff, $alpha: 0.9);
+        border: solid thin rgba($color: #000000, $alpha: 0);
+        transition: 0.1s;
         // color: white;
       }
     }
@@ -68,8 +70,9 @@
       cursor: pointer;
       
       .link-text {
-        font-size: 19pt;
-        border: solid $midnight-blue;
+        // font-size: 19pt;
+        // border: solid $midnight-blue;
+        box-shadow: inset 0px 4px 10px -5px #000000;
       }
     }
 
@@ -78,7 +81,7 @@
       color: #002539;
 
       .link-text {
-        box-shadow: inset 1px 1px 10px 0px #000000;
+        box-shadow: inset 0px 2px 10px -5px #000000;
       }
     }
   
@@ -129,8 +132,10 @@
     cursor: pointer;
       
     .link-text {
-      font-size: 19pt !important;
-      // border: solid $midnight-blue;
+      // font-size: 19pt !important;
+      scale: 1.1;
+      box-shadow: 0px 15px 15px 0px #dddddd;
+      border: solid thin black !important;
     }
   }
 }
