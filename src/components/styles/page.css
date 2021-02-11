@@ -35,7 +35,7 @@
   color: #f7f8ff;
 }
 .page .page-title {
-  font-size: 18pt;
+  font-size: 24pt;
   margin-left: 40px;
   margin-right: 40px;
   margin-top: 0px;
@@ -44,7 +44,7 @@
   letter-spacing: 0.06em;
 }
 .page .page-title .title-emphasis {
-  font-size: 16pt;
+  font-size: 22pt;
   font-weight: bold;
   border: solid thin #AEF6FF;
   padding: 5px;
